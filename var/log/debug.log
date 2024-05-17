@@ -1252,3 +1252,789 @@ d [] []
 [2024-05-17T05:13:42.900614+00:00] main.CRITICAL: A symlink for "C:/xampp/htdocs/m246/lib/web/fonts/opensans/semibold/opensans-600.woff" can't be created and placed to "C:/xampp/htdocs/m246/pub/static/frontend/Magento/luma/en_US/fonts/opensans/semibold/opensans-600.woff". Warning!symlink(): Permission denied [] []
 [2024-05-17T05:13:42.943906+00:00] main.ERROR: A symlink for "C:/xampp/htdocs/m246/vendor/magento/theme-frontend-luma/web/fonts/Luma-Icons.woff" can't be created and placed to "C:/xampp/htdocs/m246/pub/static/frontend/Magento/luma/en_US/fonts/Luma-Icons.woff". Warning!symlink(): Permission denied [] []
 [2024-05-17T05:13:42.944960+00:00] main.CRITICAL: A symlink for "C:/xampp/htdocs/m246/vendor/magento/theme-frontend-luma/web/fonts/Luma-Icons.woff" can't be created and placed to "C:/xampp/htdocs/m246/pub/static/frontend/Magento/luma/en_US/fonts/Luma-Icons.woff". Warning!symlink(): Permission denied [] []
+[2024-05-17T05:24:25.727357+00:00] main.ERROR: Command "setup:static-content:deploy-f" is not defined.
+
+Did you mean one of these?
+    dev:source-theme:deploy
+    setup:static-content:deploy
+#0 C:\xampp\htdocs\m246\vendor\symfony\console\Application.php(266): Symfony\Component\Console\Application->find('setup:static-co...')
+#1 C:\xampp\htdocs\m246\vendor\magento\framework\Console\Cli.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\xampp\htdocs\m246\vendor\symfony\console\Application.php(175): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\xampp\htdocs\m246\bin\magento(23): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2024-05-17T05:24:46.902285+00:00] main.ERROR: NOTE: Manual static content deployment is not required in "default" and "developer" modes.
+In "default" and "developer" modes static contents are being deployed automatically on demand.
+If you still want to deploy in these modes, use -f option: 'bin/magento setup:static-content:deploy -f'
+#0 C:\xampp\htdocs\m246\setup\src\Magento\Setup\Console\Command\DeployStaticContentCommand.php(112): Magento\Setup\Console\Command\DeployStaticContentCommand->checkAppMode(Object(Symfony\Component\Console\Input\ArgvInput))
+#1 C:\xampp\htdocs\m246\vendor\symfony\console\Command\Command.php(326): Magento\Setup\Console\Command\DeployStaticContentCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\xampp\htdocs\m246\vendor\symfony\console\Application.php(1078): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\xampp\htdocs\m246\vendor\symfony\console\Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DeployStaticContentCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\xampp\htdocs\m246\vendor\magento\framework\Console\Cli.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\xampp\htdocs\m246\vendor\symfony\console\Application.php(175): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\xampp\htdocs\m246\bin\magento(23): Symfony\Component\Console\Application->run()
+#7 {main} [] []
+[2024-05-17T05:25:17.974342+00:00] main.ERROR: Command "setup:st" is not defined.
+
+Did you mean one of these?
+    cache:status
+    cron:install
+    dev:tests:run
+    i18n:uninstall
+    indexer:set-status
+    indexer:status
+    maintenance:status
+    module:status
+    module:uninstall
+    setup:backup
+    setup:config:set
+    setup:db-data:upgrade
+    setup:db-declaration:generate-patch
+    setup:db-declaration:generate-whitelist
+    setup:db-schema:upgrade
+    setup:db:status
+    setup:di:compile
+    setup:install
+    setup:performance:generate-fixtures
+    setup:rollback
+    setup:static-content:deploy
+    setup:store-config:set
+    setup:uninstall
+    setup:upgrade
+    store:list
+    theme:uninstall
+#0 C:\xampp\htdocs\m246\vendor\symfony\console\Application.php(266): Symfony\Component\Console\Application->find('setup:st')
+#1 C:\xampp\htdocs\m246\vendor\magento\framework\Console\Cli.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\xampp\htdocs\m246\vendor\symfony\console\Application.php(175): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\xampp\htdocs\m246\bin\magento(23): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2024-05-17T05:25:59.793331+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"identifier":"INTEGRITY_base"}} []
+[2024-05-17T05:25:59.794278+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"identifier":"INTEGRITY_frontend"}} []
+[2024-05-17T05:25:59.794620+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"identifier":"INTEGRITY_adminhtml"}} []
+[2024-05-17T05:33:00.073350+00:00] main.INFO: Broken reference: the 'tracking' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:00.076287+00:00] main.INFO: Broken reference: the 'notification_area' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-05-17T05:33:00.076750+00:00] main.INFO: Broken reference: the 'unread_system_messages' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-05-17T05:33:00.077006+00:00] main.INFO: Broken reference: the 'notification_window' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-05-17T05:33:00.077327+00:00] main.INFO: Broken reference: the 'notification.messages' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:00.077639+00:00] main.INFO: Broken reference: the 'global_notices' element cannot be added as child to 'global.notices', because the latter doesn't exist [] []
+[2024-05-17T05:33:00.077939+00:00] main.INFO: Broken reference: the 'logo' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:00.078208+00:00] main.INFO: Broken reference: the 'global.search' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:00.078611+00:00] main.INFO: Broken reference: the 'user' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:00.079054+00:00] main.INFO: Broken reference: the 'menu' element cannot be added as child to 'page.menu', because the latter doesn't exist [] []
+[2024-05-17T05:33:00.079271+00:00] main.INFO: Broken reference: the 'breadcrumbs' element cannot be added as child to 'page.breadcrumbs', because the latter doesn't exist [] []
+[2024-05-17T05:33:00.079472+00:00] main.INFO: Broken reference: the 'formkey' element cannot be added as child to 'page.formkey', because the latter doesn't exist [] []
+[2024-05-17T05:33:00.079650+00:00] main.INFO: Broken reference: the 'page.title' element cannot be added as child to 'main.top', because the latter doesn't exist [] []
+[2024-05-17T05:33:00.079819+00:00] main.INFO: Broken reference: the 'messages' element cannot be added as child to 'page.messages', because the latter doesn't exist [] []
+[2024-05-17T05:33:00.080054+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' element cannot be added as child to 'page.main.actions', because the latter doesn't exist [] []
+[2024-05-17T05:33:00.080500+00:00] main.INFO: Broken reference: the 'legal' element cannot be added as child to 'footer', because the latter doesn't exist [] []
+[2024-05-17T05:33:00.081038+00:00] main.INFO: Broken reference: the 'header.inner.left' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:00.081247+00:00] main.INFO: Broken reference: the 'header.inner.right' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:00.081614+00:00] main.INFO: Broken reference: the 'user' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:33:00.082014+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:33:00.082272+00:00] main.INFO: Broken reference: the 'logo' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:33:00.082622+00:00] main.INFO: Broken reference: the 'global.search' tries to reorder itself towards 'logo', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:33:00.082857+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' tries to reorder itself towards '', but their parents are different: 'page.main.actions' and '' respectively. [] []
+[2024-05-17T05:33:00.083082+00:00] main.INFO: Broken reference: the 'header.inner.left' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:33:00.083279+00:00] main.INFO: Broken reference: the 'header.inner.right' tries to reorder itself towards 'header.inner.left', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:33:00.083489+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and '' respectively. [] []
+[2024-05-17T05:33:08.012983+00:00] main.DEBUG: cache_invalidate:  {"method":"POST","url":"http://localhost/m246/pub/admin","invalidateInfo":{"tags":["BACKEND_MAINMENU"],"mode":"matchingAnyTag"}} []
+[2024-05-17T05:33:09.253947+00:00] main.DEBUG: cache_invalidate:  {"method":"POST","url":"http://localhost/m246/pub/admin","invalidateInfo":{"tags":["PB_EDITOR_CONFIG","CONFIG"],"mode":"matchingTag"}} []
+[2024-05-17T05:33:09.636197+00:00] main.DEBUG: Item Magento_Backend::system_currency was removed [] []
+[2024-05-17T05:33:09.742709+00:00] main.DEBUG: Add of item with id Magento_Config::system_config was processed [] []
+[2024-05-17T05:33:09.743050+00:00] main.DEBUG: Add of item with id Magento_AdminNotification::system_adminnotification was processed [] []
+[2024-05-17T05:33:09.743326+00:00] main.DEBUG: Add of item with id Magento_Theme::design_config was processed [] []
+[2024-05-17T05:33:09.743572+00:00] main.DEBUG: Add of item with id Magento_Theme::system_design_theme was processed [] []
+[2024-05-17T05:33:09.743757+00:00] main.DEBUG: Add of item with id Magento_Backend::system_design_schedule was processed [] []
+[2024-05-17T05:33:09.743987+00:00] main.DEBUG: Add of item with id Magento_Backend::system_store was processed [] []
+[2024-05-17T05:33:09.744207+00:00] main.DEBUG: Add of item with id Magento_Backend::dashboard was processed [] []
+[2024-05-17T05:33:09.744538+00:00] main.DEBUG: Add of item with id Magento_Backend::system was processed [] []
+[2024-05-17T05:33:09.744802+00:00] main.DEBUG: Add of item with id Magento_Backend::system_tools was processed [] []
+[2024-05-17T05:33:09.745013+00:00] main.DEBUG: Add of item with id Magento_Backend::system_design was processed [] []
+[2024-05-17T05:33:09.745209+00:00] main.DEBUG: Add of item with id Magento_Backend::system_convert was processed [] []
+[2024-05-17T05:33:09.745413+00:00] main.DEBUG: Add of item with id Magento_Backend::system_cache was processed [] []
+[2024-05-17T05:33:09.745643+00:00] main.DEBUG: Add of item with id Magento_Backend::marketing was processed [] []
+[2024-05-17T05:33:09.745866+00:00] main.DEBUG: Add of item with id Magento_Backend::marketing_communications was processed [] []
+[2024-05-17T05:33:09.746044+00:00] main.DEBUG: Add of item with id Magento_Backend::marketing_seo was processed [] []
+[2024-05-17T05:33:09.746208+00:00] main.DEBUG: Add of item with id Magento_Backend::marketing_user_content was processed [] []
+[2024-05-17T05:33:09.746388+00:00] main.DEBUG: Add of item with id Magento_Backend::content was processed [] []
+[2024-05-17T05:33:09.746579+00:00] main.DEBUG: Add of item with id Magento_Backend::content_elements was processed [] []
+[2024-05-17T05:33:09.746756+00:00] main.DEBUG: Add of item with id Magento_Backend::stores was processed [] []
+[2024-05-17T05:33:09.746950+00:00] main.DEBUG: Add of item with id Magento_Backend::stores_settings was processed [] []
+[2024-05-17T05:33:09.747139+00:00] main.DEBUG: Add of item with id Magento_Backend::stores_attributes was processed [] []
+[2024-05-17T05:33:09.747315+00:00] main.DEBUG: Add of item with id Magento_Backend::other_settings was processed [] []
+[2024-05-17T05:33:09.747511+00:00] main.DEBUG: Add of item with id Magento_Backend::system_other_settings was processed [] []
+[2024-05-17T05:33:09.747676+00:00] main.DEBUG: Add of item with id Magento_User::system_acl was processed [] []
+[2024-05-17T05:33:09.747869+00:00] main.DEBUG: Add of item with id Magento_User::system_acl_users was processed [] []
+[2024-05-17T05:33:09.748040+00:00] main.DEBUG: Add of item with id Magento_User::system_acl_roles was processed [] []
+[2024-05-17T05:33:09.748204+00:00] main.DEBUG: Add of item with id Magento_User::system_acl_locks was processed [] []
+[2024-05-17T05:33:09.748357+00:00] main.DEBUG: Add of item with id Magento_Customer::customer was processed [] []
+[2024-05-17T05:33:09.748554+00:00] main.DEBUG: Add of item with id Magento_Customer::customer_manage was processed [] []
+[2024-05-17T05:33:09.748739+00:00] main.DEBUG: Add of item with id Magento_Customer::customer_online was processed [] []
+[2024-05-17T05:33:09.748914+00:00] main.DEBUG: Add of item with id Magento_Customer::customer_group was processed [] []
+[2024-05-17T05:33:09.749085+00:00] main.DEBUG: Add of item with id Magento_Backup::system_tools_backup was processed [] []
+[2024-05-17T05:33:09.749273+00:00] main.DEBUG: Add of item with id Magento_Indexer::system_index was processed [] []
+[2024-05-17T05:33:09.749414+00:00] main.DEBUG: Add of item with id Magento_Variable::system_variable was processed [] []
+[2024-05-17T05:33:09.749636+00:00] main.DEBUG: Add of item with id Magento_Cms::cms_page was processed [] []
+[2024-05-17T05:33:09.749859+00:00] main.DEBUG: Add of item with id Magento_Cms::cms_block was processed [] []
+[2024-05-17T05:33:09.750050+00:00] main.DEBUG: Add of item with id Magento_Integration::system_extensions was processed [] []
+[2024-05-17T05:33:09.750240+00:00] main.DEBUG: Add of item with id Magento_Integration::system_integrations was processed [] []
+[2024-05-17T05:33:09.750409+00:00] main.DEBUG: Add of item with id Magento_Search::search_terms was processed [] []
+[2024-05-17T05:33:09.750549+00:00] main.DEBUG: Add of item with id Magento_Search::search_synonyms was processed [] []
+[2024-05-17T05:33:09.750715+00:00] main.DEBUG: Add of item with id Magento_Catalog::catalog was processed [] []
+[2024-05-17T05:33:09.750896+00:00] main.DEBUG: Add of item with id Magento_Catalog::catalog_products was processed [] []
+[2024-05-17T05:33:09.751072+00:00] main.DEBUG: Add of item with id Magento_Catalog::catalog_categories was processed [] []
+[2024-05-17T05:33:09.751241+00:00] main.DEBUG: Add of item with id Magento_Catalog::catalog_attributes_attributes was processed [] []
+[2024-05-17T05:33:09.751398+00:00] main.DEBUG: Add of item with id Magento_Catalog::catalog_attributes_sets was processed [] []
+[2024-05-17T05:33:09.751553+00:00] main.DEBUG: Add of item with id Magento_Catalog::inventory was processed [] []
+[2024-05-17T05:33:09.751716+00:00] main.DEBUG: Add of item with id Magento_CatalogRule::promo was processed [] []
+[2024-05-17T05:33:09.751923+00:00] main.DEBUG: Add of item with id Magento_CatalogRule::promo_catalog was processed [] []
+[2024-05-17T05:33:09.752093+00:00] main.DEBUG: Add of item with id Magento_MediaGalleryUi::media was processed [] []
+[2024-05-17T05:33:09.752272+00:00] main.DEBUG: Add of item with id Magento_MediaGalleryUi::media_gallery was processed [] []
+[2024-05-17T05:33:09.752424+00:00] main.DEBUG: Add of item with id Magento_Sales::sales was processed [] []
+[2024-05-17T05:33:09.752594+00:00] main.DEBUG: Add of item with id Magento_Sales::sales_operation was processed [] []
+[2024-05-17T05:33:09.752773+00:00] main.DEBUG: Add of item with id Magento_Sales::sales_order was processed [] []
+[2024-05-17T05:33:09.753055+00:00] main.DEBUG: Add of item with id Magento_Sales::sales_invoice was processed [] []
+[2024-05-17T05:33:09.753368+00:00] main.DEBUG: Add of item with id Magento_Sales::sales_shipment was processed [] []
+[2024-05-17T05:33:09.753601+00:00] main.DEBUG: Add of item with id Magento_Sales::sales_creditmemo was processed [] []
+[2024-05-17T05:33:09.753799+00:00] main.DEBUG: Add of item with id Magento_Sales::sales_transactions was processed [] []
+[2024-05-17T05:33:09.754087+00:00] main.DEBUG: Add of item with id Magento_Sales::system_order_statuses was processed [] []
+[2024-05-17T05:33:09.754317+00:00] main.DEBUG: Add of item with id Magento_Widget::cms_widget_instance was processed [] []
+[2024-05-17T05:33:09.754842+00:00] main.DEBUG: Add of item with id Magento_Analytics::business_intelligence was processed [] []
+[2024-05-17T05:33:09.755206+00:00] main.DEBUG: Add of item with id Magento_Analytics::advanced_reporting was processed [] []
+[2024-05-17T05:33:09.755426+00:00] main.DEBUG: Add of item with id Magento_Analytics::bi_essentials was processed [] []
+[2024-05-17T05:33:09.755707+00:00] main.DEBUG: Add of item with id Magento_Downloadable::report_products_downloads was processed [] []
+[2024-05-17T05:33:09.756023+00:00] main.DEBUG: Add of item with id Magento_Newsletter::newsletter_template was processed [] []
+[2024-05-17T05:33:09.756235+00:00] main.DEBUG: Add of item with id Magento_Newsletter::newsletter_queue was processed [] []
+[2024-05-17T05:33:09.756428+00:00] main.DEBUG: Add of item with id Magento_Newsletter::newsletter_subscriber was processed [] []
+[2024-05-17T05:33:09.756633+00:00] main.DEBUG: Add of item with id Magento_Newsletter::newsletter_problem was processed [] []
+[2024-05-17T05:33:09.756798+00:00] main.DEBUG: Add of item with id Magento_ImportExport::system_convert_import was processed [] []
+[2024-05-17T05:33:09.756991+00:00] main.DEBUG: Add of item with id Magento_ImportExport::system_convert_export was processed [] []
+[2024-05-17T05:33:09.757186+00:00] main.DEBUG: Add of item with id Magento_ImportExport::system_convert_history was processed [] []
+[2024-05-17T05:33:09.757441+00:00] main.DEBUG: Add of item with id Magento_Email::template was processed [] []
+[2024-05-17T05:33:09.757634+00:00] main.DEBUG: Add of item with id Magento_EncryptionKey::system_crypt_key was processed [] []
+[2024-05-17T05:33:09.757804+00:00] main.DEBUG: Add of item with id Magento_InventoryAdminUi::inventory was processed [] []
+[2024-05-17T05:33:09.757998+00:00] main.DEBUG: Add of item with id Magento_InventoryAdminUi::source was processed [] []
+[2024-05-17T05:33:09.758161+00:00] main.DEBUG: Add of item with id Magento_InventoryAdminUi::stock was processed [] []
+[2024-05-17T05:33:09.758303+00:00] main.DEBUG: Add of item with id Magento_Reports::report was processed [] []
+[2024-05-17T05:33:09.758437+00:00] main.DEBUG: Add of item with id Magento_Reports::report_marketing was processed [] []
+[2024-05-17T05:33:09.758570+00:00] main.DEBUG: Add of item with id Magento_Reports::report_salesroot was processed [] []
+[2024-05-17T05:33:09.758717+00:00] main.DEBUG: Add of item with id Magento_Reports::report_salesroot_sales was processed [] []
+[2024-05-17T05:33:09.758853+00:00] main.DEBUG: Add of item with id Magento_Reports::report_salesroot_tax was processed [] []
+[2024-05-17T05:33:09.758983+00:00] main.DEBUG: Add of item with id Magento_Reports::report_salesroot_invoiced was processed [] []
+[2024-05-17T05:33:09.759112+00:00] main.DEBUG: Add of item with id Magento_Reports::report_salesroot_shipping was processed [] []
+[2024-05-17T05:33:09.759234+00:00] main.DEBUG: Add of item with id Magento_Reports::report_salesroot_refunded was processed [] []
+[2024-05-17T05:33:09.759404+00:00] main.DEBUG: Add of item with id Magento_Reports::report_salesroot_coupons was processed [] []
+[2024-05-17T05:33:09.759600+00:00] main.DEBUG: Add of item with id Magento_Reports::report_shopcart_product was processed [] []
+[2024-05-17T05:33:09.759780+00:00] main.DEBUG: Add of item with id Magento_Reports::report_shopcart_abandoned was processed [] []
+[2024-05-17T05:33:09.760008+00:00] main.DEBUG: Add of item with id Magento_Reports::report_products was processed [] []
+[2024-05-17T05:33:09.760223+00:00] main.DEBUG: Add of item with id Magento_Reports::report_products_bestsellers was processed [] []
+[2024-05-17T05:33:09.760463+00:00] main.DEBUG: Add of item with id Magento_Reports::report_products_sold was processed [] []
+[2024-05-17T05:33:09.760647+00:00] main.DEBUG: Add of item with id Magento_Reports::report_products_viewed was processed [] []
+[2024-05-17T05:33:09.760841+00:00] main.DEBUG: Add of item with id Magento_Reports::report_products_lowstock was processed [] []
+[2024-05-17T05:33:09.761069+00:00] main.DEBUG: Add of item with id Magento_Reports::report_customers was processed [] []
+[2024-05-17T05:33:09.761426+00:00] main.DEBUG: Add of item with id Magento_Reports::report_customers_accounts was processed [] []
+[2024-05-17T05:33:09.761737+00:00] main.DEBUG: Add of item with id Magento_Reports::report_customers_totals was processed [] []
+[2024-05-17T05:33:09.761996+00:00] main.DEBUG: Add of item with id Magento_Reports::report_customers_orders was processed [] []
+[2024-05-17T05:33:09.762177+00:00] main.DEBUG: Add of item with id Magento_Reports::report_statistics was processed [] []
+[2024-05-17T05:33:09.762408+00:00] main.DEBUG: Add of item with id Magento_Reports::report_statistics_refresh was processed [] []
+[2024-05-17T05:33:09.762592+00:00] main.DEBUG: Add of item with id Magento_Search::report_search_term was processed [] []
+[2024-05-17T05:33:09.762829+00:00] main.DEBUG: Add of item with id Magento_LoginAsCustomerLog::login_log was processed [] []
+[2024-05-17T05:33:09.763029+00:00] main.DEBUG: Add of item with id Magento_Marketplace::partners was processed [] []
+[2024-05-17T05:33:09.763199+00:00] main.DEBUG: Add of item with id Magento_SalesRule::promo_quote was processed [] []
+[2024-05-17T05:33:09.763406+00:00] main.DEBUG: Add of item with id Magento_Sitemap::catalog_sitemap was processed [] []
+[2024-05-17T05:33:09.763624+00:00] main.DEBUG: Add of item with id Magento_PageBuilder::templates was processed [] []
+[2024-05-17T05:33:09.763852+00:00] main.DEBUG: Add of item with id Magento_Paypal::report_salesroot_paypal_settlement_reports was processed [] []
+[2024-05-17T05:33:09.764058+00:00] main.DEBUG: Add of item with id Magento_Paypal::paypal_billing_agreement was processed [] []
+[2024-05-17T05:33:09.764274+00:00] main.DEBUG: Add of item with id Magento_CheckoutAgreements::sales_checkoutagreement was processed [] []
+[2024-05-17T05:33:09.764441+00:00] main.DEBUG: Add of item with id Magento_Review::catalog_reviews_ratings_ratings was processed [] []
+[2024-05-17T05:33:09.764843+00:00] main.DEBUG: Add of item with id Magento_Review::catalog_reviews_ratings_pending was processed [] []
+[2024-05-17T05:33:09.765117+00:00] main.DEBUG: Add of item with id Magento_Review::catalog_reviews_ratings_reviews_all was processed [] []
+[2024-05-17T05:33:09.765303+00:00] main.DEBUG: Add of item with id Magento_Review::report_review was processed [] []
+[2024-05-17T05:33:09.765475+00:00] main.DEBUG: Add of item with id Magento_Review::report_review_customer was processed [] []
+[2024-05-17T05:33:09.765607+00:00] main.DEBUG: Add of item with id Magento_Review::report_review_product was processed [] []
+[2024-05-17T05:33:09.765821+00:00] main.DEBUG: Add of item with id Magento_UrlRewrite::urlrewrite was processed [] []
+[2024-05-17T05:33:09.766059+00:00] main.DEBUG: Add of item with id Magento_PaymentServicesDashboard::paymentservicesdashboard was processed [] []
+[2024-05-17T05:33:09.766227+00:00] main.DEBUG: Add of item with id Magento_ServicesId::configuration was processed [] []
+[2024-05-17T05:33:09.766403+00:00] main.DEBUG: Add of item with id Magento_ServicesId::services_id was processed [] []
+[2024-05-17T05:33:09.766541+00:00] main.DEBUG: Add of item with id Magento_Tax::sales_tax was processed [] []
+[2024-05-17T05:33:09.766728+00:00] main.DEBUG: Add of item with id Magento_Tax::sales_tax_rules was processed [] []
+[2024-05-17T05:33:09.766857+00:00] main.DEBUG: Add of item with id Magento_Tax::sales_tax_rates was processed [] []
+[2024-05-17T05:33:09.767064+00:00] main.DEBUG: Add of item with id Magento_TaxImportExport::system_convert_tax was processed [] []
+[2024-05-17T05:33:09.767195+00:00] main.DEBUG: Add of item with id Magento_AsynchronousOperations::system_magento_logging was processed [] []
+[2024-05-17T05:33:09.767360+00:00] main.DEBUG: Add of item with id Magento_AsynchronousOperations::system_magento_logging_bulk_operations was processed [] []
+[2024-05-17T05:33:09.767511+00:00] main.DEBUG: Add of item with id Magento_CurrencySymbol::system_currency was processed [] []
+[2024-05-17T05:33:09.767657+00:00] main.DEBUG: Add of item with id Magento_CurrencySymbol::system_currency_rates was processed [] []
+[2024-05-17T05:33:09.767788+00:00] main.DEBUG: Add of item with id Magento_CurrencySymbol::system_currency_symbols was processed [] []
+[2024-05-17T05:33:09.767919+00:00] main.DEBUG: Add of item with id PayPal_Braintree::settlement_report was processed [] []
+[2024-05-17T05:33:09.768040+00:00] main.DEBUG: Add of item with id PayPal_Braintree::virtual_terminal was processed [] []
+[2024-05-17T05:33:15.831834+00:00] main.ERROR: Laminas\Mail\Transport\Exception\RuntimeException: Unable to send mail: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\m246\vendor\laminas\laminas-mail\src\Transport\Sendmail.php:313
+Stack trace:
+#0 C:\xampp\htdocs\m246\vendor\laminas\laminas-mail\src\Transport\Sendmail.php(150): Laminas\Mail\Transport\Sendmail->mailHandler('admin@admin.com', '=?UTF-8?Q?2FA=2...', '<p>admin admin,...', 'Date: Fri, 17 M...', '')
+#1 C:\xampp\htdocs\m246\vendor\magento\module-email\Model\Transport.php(183): Laminas\Mail\Transport\Sendmail->send(Object(Laminas\Mail\Message))
+#2 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\Email\Model\Transport->sendMessage()
+#3 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Email\Model\Transport\Interceptor->___callParent('sendMessage', Array)
+#4 C:\xampp\htdocs\m246\vendor\magento\module-email\Model\Mail\TransportInterfacePlugin.php(48): Magento\Email\Model\Transport\Interceptor->Magento\Framework\Interception\{closure}()
+#5 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(135): Magento\Email\Model\Mail\TransportInterfacePlugin->aroundSendMessage(Object(Magento\Email\Model\Transport\Interceptor), Object(Closure))
+#6 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Email\Model\Transport\Interceptor->Magento\Framework\Interception\{closure}()
+#7 C:\xampp\htdocs\m246\generated\code\Magento\Email\Model\Transport\Interceptor.php(32): Magento\Email\Model\Transport\Interceptor->___callPlugins('sendMessage', Array, NULL)
+#8 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Model\EmailUserNotifier.php(106): Magento\Email\Model\Transport\Interceptor->sendMessage()
+#9 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Model\EmailUserNotifier.php(131): Magento\TwoFactorAuth\Model\EmailUserNotifier->sendConfigRequired(Object(Magento\AdminAdobeIms\Model\User\Interceptor), 'eyJ1c2VyX2lkIjo...', 'tfa_admin_app_c...', 'http://localhos...')
+#10 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Model\UserConfig\UserConfigRequestManager.php(82): Magento\TwoFactorAuth\Model\EmailUserNotifier->sendAppConfigRequestMessage(Object(Magento\AdminAdobeIms\Model\User\Interceptor), 'eyJ1c2VyX2lkIjo...')
+#11 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Controller\Adminhtml\Tfa\Requestconfig.php(95): Magento\TwoFactorAuth\Model\UserConfig\UserConfigRequestManager->sendConfigRequestTo(Object(Magento\AdminAdobeIms\Model\User\Interceptor))
+#12 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig->execute()
+#13 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callParent('execute', Array)
+#14 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->Magento\Framework\Interception\{closure}()
+#15 C:\xampp\htdocs\m246\generated\code\Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor.php(23): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callPlugins('execute', Array, Array)
+#16 C:\xampp\htdocs\m246\vendor\magento\framework\App\Action\Action.php(111): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->execute()
+#17 C:\xampp\htdocs\m246\vendor\magento\module-backend\App\AbstractAction.php(151): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#18 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Controller\Adminhtml\AbstractAction.php(30): Magento\Backend\App\AbstractAction->dispatch(Object(Magento\Framework\App\Request\Http))
+#19 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\TwoFactorAuth\Controller\Adminhtml\AbstractAction->dispatch(Object(Magento\Framework\App\Request\Http))
+#20 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callParent('dispatch', Array)
+#21 C:\xampp\htdocs\m246\vendor\magento\module-backend\App\Action\Plugin\Authentication.php(145): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#22 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(135): Magento\Backend\App\Action\Plugin\Authentication->aroundDispatch(Object(Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor), Object(Closure), Object(Magento\Framework\App\Request\Http))
+#23 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#24 C:\xampp\htdocs\m246\generated\code\Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor.php(32): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callPlugins('dispatch', Array, Array)
+#25 C:\xampp\htdocs\m246\vendor\magento\framework\App\FrontController.php(245): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))
+#26 C:\xampp\htdocs\m246\vendor\magento\framework\App\FrontController.php(212): Magento\Framework\App\FrontController->getActionResponse(Object(Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor), Object(Magento\Framework\App\Request\Http))
+#27 C:\xampp\htdocs\m246\vendor\magento\framework\App\FrontController.php(146): Magento\Framework\App\FrontController->processRequest(Object(Magento\Framework\App\Request\Http), Object(Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor))
+#28 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\Framework\App\FrontController->dispatch(Object(Magento\Framework\App\Request\Http))
+#29 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent('dispatch', Array)
+#30 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#31 C:\xampp\htdocs\m246\generated\code\Magento\Framework\App\FrontController\Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins('dispatch', Array, Array)
+#32 C:\xampp\htdocs\m246\vendor\magento\framework\App\Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))
+#33 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\Framework\App\Http->launch()
+#34 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Framework\App\Http\Interceptor->___callParent('launch', Array)
+#35 C:\xampp\htdocs\m246\vendor\magento\module-application-performance-monitor\Plugin\ApplicationPerformanceMonitor.php(38): Magento\Framework\App\Http\Interceptor->Magento\Framework\Interception\{closure}()
+#36 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(135): Magento\ApplicationPerformanceMonitor\Plugin\ApplicationPerformanceMonitor->aroundLaunch(Object(Magento\Framework\App\Http\Interceptor), Object(Closure))
+#37 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Framework\App\Http\Interceptor->Magento\Framework\Interception\{closure}()
+#38 C:\xampp\htdocs\m246\generated\code\Magento\Framework\App\Http\Interceptor.php(23): Magento\Framework\App\Http\Interceptor->___callPlugins('launch', Array, NULL)
+#39 C:\xampp\htdocs\m246\vendor\magento\framework\App\Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#40 C:\xampp\htdocs\m246\pub\index.php(30): Magento\Framework\App\Bootstrap->run(Object(Magento\Framework\App\Http\Interceptor))
+#41 {main} {"exception":"[object] (Laminas\\Mail\\Transport\\Exception\\RuntimeException(code: 0): Unable to send mail: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() at C:\\xampp\\htdocs\\m246\\vendor\\laminas\\laminas-mail\\src\\Transport\\Sendmail.php:313)"} []
+[2024-05-17T05:33:15.841686+00:00] main.CRITICAL: Laminas\Mail\Transport\Exception\RuntimeException: Unable to send mail: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\m246\vendor\laminas\laminas-mail\src\Transport\Sendmail.php:313
+Stack trace:
+#0 C:\xampp\htdocs\m246\vendor\laminas\laminas-mail\src\Transport\Sendmail.php(150): Laminas\Mail\Transport\Sendmail->mailHandler('admin@admin.com', '=?UTF-8?Q?2FA=2...', '<p>admin admin,...', 'Date: Fri, 17 M...', '')
+#1 C:\xampp\htdocs\m246\vendor\magento\module-email\Model\Transport.php(183): Laminas\Mail\Transport\Sendmail->send(Object(Laminas\Mail\Message))
+#2 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\Email\Model\Transport->sendMessage()
+#3 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Email\Model\Transport\Interceptor->___callParent('sendMessage', Array)
+#4 C:\xampp\htdocs\m246\vendor\magento\module-email\Model\Mail\TransportInterfacePlugin.php(48): Magento\Email\Model\Transport\Interceptor->Magento\Framework\Interception\{closure}()
+#5 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(135): Magento\Email\Model\Mail\TransportInterfacePlugin->aroundSendMessage(Object(Magento\Email\Model\Transport\Interceptor), Object(Closure))
+#6 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Email\Model\Transport\Interceptor->Magento\Framework\Interception\{closure}()
+#7 C:\xampp\htdocs\m246\generated\code\Magento\Email\Model\Transport\Interceptor.php(32): Magento\Email\Model\Transport\Interceptor->___callPlugins('sendMessage', Array, NULL)
+#8 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Model\EmailUserNotifier.php(106): Magento\Email\Model\Transport\Interceptor->sendMessage()
+#9 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Model\EmailUserNotifier.php(131): Magento\TwoFactorAuth\Model\EmailUserNotifier->sendConfigRequired(Object(Magento\AdminAdobeIms\Model\User\Interceptor), 'eyJ1c2VyX2lkIjo...', 'tfa_admin_app_c...', 'http://localhos...')
+#10 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Model\UserConfig\UserConfigRequestManager.php(82): Magento\TwoFactorAuth\Model\EmailUserNotifier->sendAppConfigRequestMessage(Object(Magento\AdminAdobeIms\Model\User\Interceptor), 'eyJ1c2VyX2lkIjo...')
+#11 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Controller\Adminhtml\Tfa\Requestconfig.php(95): Magento\TwoFactorAuth\Model\UserConfig\UserConfigRequestManager->sendConfigRequestTo(Object(Magento\AdminAdobeIms\Model\User\Interceptor))
+#12 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig->execute()
+#13 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callParent('execute', Array)
+#14 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->Magento\Framework\Interception\{closure}()
+#15 C:\xampp\htdocs\m246\generated\code\Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor.php(23): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callPlugins('execute', Array, Array)
+#16 C:\xampp\htdocs\m246\vendor\magento\framework\App\Action\Action.php(111): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->execute()
+#17 C:\xampp\htdocs\m246\vendor\magento\module-backend\App\AbstractAction.php(151): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#18 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Controller\Adminhtml\AbstractAction.php(30): Magento\Backend\App\AbstractAction->dispatch(Object(Magento\Framework\App\Request\Http))
+#19 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\TwoFactorAuth\Controller\Adminhtml\AbstractAction->dispatch(Object(Magento\Framework\App\Request\Http))
+#20 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callParent('dispatch', Array)
+#21 C:\xampp\htdocs\m246\vendor\magento\module-backend\App\Action\Plugin\Authentication.php(145): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#22 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(135): Magento\Backend\App\Action\Plugin\Authentication->aroundDispatch(Object(Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor), Object(Closure), Object(Magento\Framework\App\Request\Http))
+#23 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#24 C:\xampp\htdocs\m246\generated\code\Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor.php(32): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callPlugins('dispatch', Array, Array)
+#25 C:\xampp\htdocs\m246\vendor\magento\framework\App\FrontController.php(245): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))
+#26 C:\xampp\htdocs\m246\vendor\magento\framework\App\FrontController.php(212): Magento\Framework\App\FrontController->getActionResponse(Object(Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor), Object(Magento\Framework\App\Request\Http))
+#27 C:\xampp\htdocs\m246\vendor\magento\framework\App\FrontController.php(146): Magento\Framework\App\FrontController->processRequest(Object(Magento\Framework\App\Request\Http), Object(Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor))
+#28 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\Framework\App\FrontController->dispatch(Object(Magento\Framework\App\Request\Http))
+#29 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent('dispatch', Array)
+#30 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#31 C:\xampp\htdocs\m246\generated\code\Magento\Framework\App\FrontController\Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins('dispatch', Array, Array)
+#32 C:\xampp\htdocs\m246\vendor\magento\framework\App\Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))
+#33 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\Framework\App\Http->launch()
+#34 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Framework\App\Http\Interceptor->___callParent('launch', Array)
+#35 C:\xampp\htdocs\m246\vendor\magento\module-application-performance-monitor\Plugin\ApplicationPerformanceMonitor.php(38): Magento\Framework\App\Http\Interceptor->Magento\Framework\Interception\{closure}()
+#36 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(135): Magento\ApplicationPerformanceMonitor\Plugin\ApplicationPerformanceMonitor->aroundLaunch(Object(Magento\Framework\App\Http\Interceptor), Object(Closure))
+#37 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Framework\App\Http\Interceptor->Magento\Framework\Interception\{closure}()
+#38 C:\xampp\htdocs\m246\generated\code\Magento\Framework\App\Http\Interceptor.php(23): Magento\Framework\App\Http\Interceptor->___callPlugins('launch', Array, NULL)
+#39 C:\xampp\htdocs\m246\vendor\magento\framework\App\Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#40 C:\xampp\htdocs\m246\pub\index.php(30): Magento\Framework\App\Bootstrap->run(Object(Magento\Framework\App\Http\Interceptor))
+#41 {main}
+
+Next Magento\Framework\Exception\MailException: Unable to send mail. Please try again later. in C:\xampp\htdocs\m246\vendor\magento\module-email\Model\Transport.php:186
+Stack trace:
+#0 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\Email\Model\Transport->sendMessage()
+#1 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Email\Model\Transport\Interceptor->___callParent('sendMessage', Array)
+#2 C:\xampp\htdocs\m246\vendor\magento\module-email\Model\Mail\TransportInterfacePlugin.php(48): Magento\Email\Model\Transport\Interceptor->Magento\Framework\Interception\{closure}()
+#3 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(135): Magento\Email\Model\Mail\TransportInterfacePlugin->aroundSendMessage(Object(Magento\Email\Model\Transport\Interceptor), Object(Closure))
+#4 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Email\Model\Transport\Interceptor->Magento\Framework\Interception\{closure}()
+#5 C:\xampp\htdocs\m246\generated\code\Magento\Email\Model\Transport\Interceptor.php(32): Magento\Email\Model\Transport\Interceptor->___callPlugins('sendMessage', Array, NULL)
+#6 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Model\EmailUserNotifier.php(106): Magento\Email\Model\Transport\Interceptor->sendMessage()
+#7 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Model\EmailUserNotifier.php(131): Magento\TwoFactorAuth\Model\EmailUserNotifier->sendConfigRequired(Object(Magento\AdminAdobeIms\Model\User\Interceptor), 'eyJ1c2VyX2lkIjo...', 'tfa_admin_app_c...', 'http://localhos...')
+#8 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Model\UserConfig\UserConfigRequestManager.php(82): Magento\TwoFactorAuth\Model\EmailUserNotifier->sendAppConfigRequestMessage(Object(Magento\AdminAdobeIms\Model\User\Interceptor), 'eyJ1c2VyX2lkIjo...')
+#9 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Controller\Adminhtml\Tfa\Requestconfig.php(95): Magento\TwoFactorAuth\Model\UserConfig\UserConfigRequestManager->sendConfigRequestTo(Object(Magento\AdminAdobeIms\Model\User\Interceptor))
+#10 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig->execute()
+#11 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callParent('execute', Array)
+#12 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->Magento\Framework\Interception\{closure}()
+#13 C:\xampp\htdocs\m246\generated\code\Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor.php(23): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callPlugins('execute', Array, Array)
+#14 C:\xampp\htdocs\m246\vendor\magento\framework\App\Action\Action.php(111): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->execute()
+#15 C:\xampp\htdocs\m246\vendor\magento\module-backend\App\AbstractAction.php(151): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#16 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Controller\Adminhtml\AbstractAction.php(30): Magento\Backend\App\AbstractAction->dispatch(Object(Magento\Framework\App\Request\Http))
+#17 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\TwoFactorAuth\Controller\Adminhtml\AbstractAction->dispatch(Object(Magento\Framework\App\Request\Http))
+#18 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callParent('dispatch', Array)
+#19 C:\xampp\htdocs\m246\vendor\magento\module-backend\App\Action\Plugin\Authentication.php(145): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#20 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(135): Magento\Backend\App\Action\Plugin\Authentication->aroundDispatch(Object(Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor), Object(Closure), Object(Magento\Framework\App\Request\Http))
+#21 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#22 C:\xampp\htdocs\m246\generated\code\Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor.php(32): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callPlugins('dispatch', Array, Array)
+#23 C:\xampp\htdocs\m246\vendor\magento\framework\App\FrontController.php(245): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))
+#24 C:\xampp\htdocs\m246\vendor\magento\framework\App\FrontController.php(212): Magento\Framework\App\FrontController->getActionResponse(Object(Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor), Object(Magento\Framework\App\Request\Http))
+#25 C:\xampp\htdocs\m246\vendor\magento\framework\App\FrontController.php(146): Magento\Framework\App\FrontController->processRequest(Object(Magento\Framework\App\Request\Http), Object(Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor))
+#26 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\Framework\App\FrontController->dispatch(Object(Magento\Framework\App\Request\Http))
+#27 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent('dispatch', Array)
+#28 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#29 C:\xampp\htdocs\m246\generated\code\Magento\Framework\App\FrontController\Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins('dispatch', Array, Array)
+#30 C:\xampp\htdocs\m246\vendor\magento\framework\App\Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))
+#31 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\Framework\App\Http->launch()
+#32 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Framework\App\Http\Interceptor->___callParent('launch', Array)
+#33 C:\xampp\htdocs\m246\vendor\magento\module-application-performance-monitor\Plugin\ApplicationPerformanceMonitor.php(38): Magento\Framework\App\Http\Interceptor->Magento\Framework\Interception\{closure}()
+#34 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(135): Magento\ApplicationPerformanceMonitor\Plugin\ApplicationPerformanceMonitor->aroundLaunch(Object(Magento\Framework\App\Http\Interceptor), Object(Closure))
+#35 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Framework\App\Http\Interceptor->Magento\Framework\Interception\{closure}()
+#36 C:\xampp\htdocs\m246\generated\code\Magento\Framework\App\Http\Interceptor.php(23): Magento\Framework\App\Http\Interceptor->___callPlugins('launch', Array, NULL)
+#37 C:\xampp\htdocs\m246\vendor\magento\framework\App\Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#38 C:\xampp\htdocs\m246\pub\index.php(30): Magento\Framework\App\Bootstrap->run(Object(Magento\Framework\App\Http\Interceptor))
+#39 {main} {"exception":"[object] (Magento\\Framework\\Exception\\MailException(code: 0): Unable to send mail. Please try again later. at C:\\xampp\\htdocs\\m246\\vendor\\magento\\module-email\\Model\\Transport.php:186)
+[previous exception] [object] (Laminas\\Mail\\Transport\\Exception\\RuntimeException(code: 0): Unable to send mail: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() at C:\\xampp\\htdocs\\m246\\vendor\\laminas\\laminas-mail\\src\\Transport\\Sendmail.php:313)"} []
+[2024-05-17T05:33:15.976061+00:00] main.INFO: Broken reference: the 'tracking' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:15.976929+00:00] main.INFO: Broken reference: the 'notification_area' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-05-17T05:33:15.977234+00:00] main.INFO: Broken reference: the 'unread_system_messages' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-05-17T05:33:15.977628+00:00] main.INFO: Broken reference: the 'notification_window' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-05-17T05:33:15.977844+00:00] main.INFO: Broken reference: the 'notification.messages' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:15.978048+00:00] main.INFO: Broken reference: the 'global_notices' element cannot be added as child to 'global.notices', because the latter doesn't exist [] []
+[2024-05-17T05:33:15.978519+00:00] main.INFO: Broken reference: the 'logo' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:15.978889+00:00] main.INFO: Broken reference: the 'global.search' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:15.979128+00:00] main.INFO: Broken reference: the 'user' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:15.979377+00:00] main.INFO: Broken reference: the 'menu' element cannot be added as child to 'page.menu', because the latter doesn't exist [] []
+[2024-05-17T05:33:15.979698+00:00] main.INFO: Broken reference: the 'breadcrumbs' element cannot be added as child to 'page.breadcrumbs', because the latter doesn't exist [] []
+[2024-05-17T05:33:15.980026+00:00] main.INFO: Broken reference: the 'formkey' element cannot be added as child to 'page.formkey', because the latter doesn't exist [] []
+[2024-05-17T05:33:15.980208+00:00] main.INFO: Broken reference: the 'page.title' element cannot be added as child to 'main.top', because the latter doesn't exist [] []
+[2024-05-17T05:33:15.980381+00:00] main.INFO: Broken reference: the 'messages' element cannot be added as child to 'page.messages', because the latter doesn't exist [] []
+[2024-05-17T05:33:15.980545+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' element cannot be added as child to 'page.main.actions', because the latter doesn't exist [] []
+[2024-05-17T05:33:15.980694+00:00] main.INFO: Broken reference: the 'legal' element cannot be added as child to 'footer', because the latter doesn't exist [] []
+[2024-05-17T05:33:15.980967+00:00] main.INFO: Broken reference: the 'header.inner.left' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:15.981138+00:00] main.INFO: Broken reference: the 'header.inner.right' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:15.981314+00:00] main.INFO: Broken reference: the 'user' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:33:15.981477+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:33:15.981624+00:00] main.INFO: Broken reference: the 'logo' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:33:15.981770+00:00] main.INFO: Broken reference: the 'global.search' tries to reorder itself towards 'logo', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:33:15.981923+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' tries to reorder itself towards '', but their parents are different: 'page.main.actions' and '' respectively. [] []
+[2024-05-17T05:33:15.982086+00:00] main.INFO: Broken reference: the 'header.inner.left' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:33:15.982239+00:00] main.INFO: Broken reference: the 'header.inner.right' tries to reorder itself towards 'header.inner.left', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:33:15.982400+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and '' respectively. [] []
+[2024-05-17T05:33:24.977140+00:00] main.INFO: Broken reference: the 'tracking' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:24.978498+00:00] main.INFO: Broken reference: the 'notification_area' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-05-17T05:33:24.978959+00:00] main.INFO: Broken reference: the 'unread_system_messages' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-05-17T05:33:24.979253+00:00] main.INFO: Broken reference: the 'notification_window' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-05-17T05:33:24.979455+00:00] main.INFO: Broken reference: the 'notification.messages' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:24.979651+00:00] main.INFO: Broken reference: the 'global_notices' element cannot be added as child to 'global.notices', because the latter doesn't exist [] []
+[2024-05-17T05:33:24.979844+00:00] main.INFO: Broken reference: the 'logo' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:24.980035+00:00] main.INFO: Broken reference: the 'global.search' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:24.980251+00:00] main.INFO: Broken reference: the 'user' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:24.980455+00:00] main.INFO: Broken reference: the 'menu' element cannot be added as child to 'page.menu', because the latter doesn't exist [] []
+[2024-05-17T05:33:24.980686+00:00] main.INFO: Broken reference: the 'breadcrumbs' element cannot be added as child to 'page.breadcrumbs', because the latter doesn't exist [] []
+[2024-05-17T05:33:24.980877+00:00] main.INFO: Broken reference: the 'formkey' element cannot be added as child to 'page.formkey', because the latter doesn't exist [] []
+[2024-05-17T05:33:24.981109+00:00] main.INFO: Broken reference: the 'page.title' element cannot be added as child to 'main.top', because the latter doesn't exist [] []
+[2024-05-17T05:33:24.981297+00:00] main.INFO: Broken reference: the 'messages' element cannot be added as child to 'page.messages', because the latter doesn't exist [] []
+[2024-05-17T05:33:24.981490+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' element cannot be added as child to 'page.main.actions', because the latter doesn't exist [] []
+[2024-05-17T05:33:24.981673+00:00] main.INFO: Broken reference: the 'legal' element cannot be added as child to 'footer', because the latter doesn't exist [] []
+[2024-05-17T05:33:24.981930+00:00] main.INFO: Broken reference: the 'header.inner.left' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:24.982130+00:00] main.INFO: Broken reference: the 'header.inner.right' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:33:24.982377+00:00] main.INFO: Broken reference: the 'user' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:33:24.982569+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:33:24.982751+00:00] main.INFO: Broken reference: the 'logo' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:33:24.982940+00:00] main.INFO: Broken reference: the 'global.search' tries to reorder itself towards 'logo', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:33:24.983123+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' tries to reorder itself towards '', but their parents are different: 'page.main.actions' and '' respectively. [] []
+[2024-05-17T05:33:24.983323+00:00] main.INFO: Broken reference: the 'header.inner.left' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:33:24.983516+00:00] main.INFO: Broken reference: the 'header.inner.right' tries to reorder itself towards 'header.inner.left', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:33:24.983703+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and '' respectively. [] []
+[2024-05-17T05:56:29.974142+00:00] main.INFO: Broken reference: the 'tracking' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:56:29.975546+00:00] main.INFO: Broken reference: the 'notification_area' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-05-17T05:56:29.975811+00:00] main.INFO: Broken reference: the 'unread_system_messages' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-05-17T05:56:29.976010+00:00] main.INFO: Broken reference: the 'notification_window' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-05-17T05:56:29.976261+00:00] main.INFO: Broken reference: the 'notification.messages' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:56:29.976513+00:00] main.INFO: Broken reference: the 'global_notices' element cannot be added as child to 'global.notices', because the latter doesn't exist [] []
+[2024-05-17T05:56:29.976757+00:00] main.INFO: Broken reference: the 'logo' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:56:29.977129+00:00] main.INFO: Broken reference: the 'global.search' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:56:29.977444+00:00] main.INFO: Broken reference: the 'user' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:56:29.977686+00:00] main.INFO: Broken reference: the 'menu' element cannot be added as child to 'page.menu', because the latter doesn't exist [] []
+[2024-05-17T05:56:29.977854+00:00] main.INFO: Broken reference: the 'breadcrumbs' element cannot be added as child to 'page.breadcrumbs', because the latter doesn't exist [] []
+[2024-05-17T05:56:29.978021+00:00] main.INFO: Broken reference: the 'formkey' element cannot be added as child to 'page.formkey', because the latter doesn't exist [] []
+[2024-05-17T05:56:29.978195+00:00] main.INFO: Broken reference: the 'page.title' element cannot be added as child to 'main.top', because the latter doesn't exist [] []
+[2024-05-17T05:56:29.978351+00:00] main.INFO: Broken reference: the 'messages' element cannot be added as child to 'page.messages', because the latter doesn't exist [] []
+[2024-05-17T05:56:29.978507+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' element cannot be added as child to 'page.main.actions', because the latter doesn't exist [] []
+[2024-05-17T05:56:29.978659+00:00] main.INFO: Broken reference: the 'legal' element cannot be added as child to 'footer', because the latter doesn't exist [] []
+[2024-05-17T05:56:29.978872+00:00] main.INFO: Broken reference: the 'header.inner.left' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:56:29.979066+00:00] main.INFO: Broken reference: the 'header.inner.right' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:56:29.979346+00:00] main.INFO: Broken reference: the 'user' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:56:29.979615+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:56:29.979780+00:00] main.INFO: Broken reference: the 'logo' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:56:29.979953+00:00] main.INFO: Broken reference: the 'global.search' tries to reorder itself towards 'logo', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:56:29.980104+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' tries to reorder itself towards '', but their parents are different: 'page.main.actions' and '' respectively. [] []
+[2024-05-17T05:56:29.980323+00:00] main.INFO: Broken reference: the 'header.inner.left' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:56:29.980509+00:00] main.INFO: Broken reference: the 'header.inner.right' tries to reorder itself towards 'header.inner.left', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:56:29.980685+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and '' respectively. [] []
+[2024-05-17T05:56:36.873914+00:00] main.DEBUG: cache_invalidate:  {"method":"POST","url":"http://localhost/m246/pub/admin","invalidateInfo":{"tags":["BACKEND_MAINMENU"],"mode":"matchingAnyTag"}} []
+[2024-05-17T05:56:36.922636+00:00] main.DEBUG: cache_invalidate:  {"method":"POST","url":"http://localhost/m246/pub/admin","invalidateInfo":{"tags":["PB_EDITOR_CONFIG","CONFIG"],"mode":"matchingTag"}} []
+[2024-05-17T05:56:40.114701+00:00] main.ERROR: Laminas\Mail\Transport\Exception\RuntimeException: Unable to send mail: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\m246\vendor\laminas\laminas-mail\src\Transport\Sendmail.php:313
+Stack trace:
+#0 C:\xampp\htdocs\m246\vendor\laminas\laminas-mail\src\Transport\Sendmail.php(150): Laminas\Mail\Transport\Sendmail->mailHandler('admin@admin.com', '=?UTF-8?Q?2FA=2...', '<p>admin admin,...', 'Date: Fri, 17 M...', '')
+#1 C:\xampp\htdocs\m246\vendor\magento\module-email\Model\Transport.php(183): Laminas\Mail\Transport\Sendmail->send(Object(Laminas\Mail\Message))
+#2 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\Email\Model\Transport->sendMessage()
+#3 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Email\Model\Transport\Interceptor->___callParent('sendMessage', Array)
+#4 C:\xampp\htdocs\m246\vendor\magento\module-email\Model\Mail\TransportInterfacePlugin.php(48): Magento\Email\Model\Transport\Interceptor->Magento\Framework\Interception\{closure}()
+#5 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(135): Magento\Email\Model\Mail\TransportInterfacePlugin->aroundSendMessage(Object(Magento\Email\Model\Transport\Interceptor), Object(Closure))
+#6 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Email\Model\Transport\Interceptor->Magento\Framework\Interception\{closure}()
+#7 C:\xampp\htdocs\m246\generated\code\Magento\Email\Model\Transport\Interceptor.php(32): Magento\Email\Model\Transport\Interceptor->___callPlugins('sendMessage', Array, NULL)
+#8 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Model\EmailUserNotifier.php(106): Magento\Email\Model\Transport\Interceptor->sendMessage()
+#9 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Model\EmailUserNotifier.php(131): Magento\TwoFactorAuth\Model\EmailUserNotifier->sendConfigRequired(Object(Magento\AdminAdobeIms\Model\User\Interceptor), 'eyJ1c2VyX2lkIjo...', 'tfa_admin_app_c...', 'http://localhos...')
+#10 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Model\UserConfig\UserConfigRequestManager.php(82): Magento\TwoFactorAuth\Model\EmailUserNotifier->sendAppConfigRequestMessage(Object(Magento\AdminAdobeIms\Model\User\Interceptor), 'eyJ1c2VyX2lkIjo...')
+#11 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Controller\Adminhtml\Tfa\Requestconfig.php(95): Magento\TwoFactorAuth\Model\UserConfig\UserConfigRequestManager->sendConfigRequestTo(Object(Magento\AdminAdobeIms\Model\User\Interceptor))
+#12 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig->execute()
+#13 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callParent('execute', Array)
+#14 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->Magento\Framework\Interception\{closure}()
+#15 C:\xampp\htdocs\m246\generated\code\Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor.php(23): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callPlugins('execute', Array, Array)
+#16 C:\xampp\htdocs\m246\vendor\magento\framework\App\Action\Action.php(111): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->execute()
+#17 C:\xampp\htdocs\m246\vendor\magento\module-backend\App\AbstractAction.php(151): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#18 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Controller\Adminhtml\AbstractAction.php(30): Magento\Backend\App\AbstractAction->dispatch(Object(Magento\Framework\App\Request\Http))
+#19 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\TwoFactorAuth\Controller\Adminhtml\AbstractAction->dispatch(Object(Magento\Framework\App\Request\Http))
+#20 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callParent('dispatch', Array)
+#21 C:\xampp\htdocs\m246\vendor\magento\module-backend\App\Action\Plugin\Authentication.php(145): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#22 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(135): Magento\Backend\App\Action\Plugin\Authentication->aroundDispatch(Object(Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor), Object(Closure), Object(Magento\Framework\App\Request\Http))
+#23 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#24 C:\xampp\htdocs\m246\generated\code\Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor.php(32): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callPlugins('dispatch', Array, Array)
+#25 C:\xampp\htdocs\m246\vendor\magento\framework\App\FrontController.php(245): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))
+#26 C:\xampp\htdocs\m246\vendor\magento\framework\App\FrontController.php(212): Magento\Framework\App\FrontController->getActionResponse(Object(Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor), Object(Magento\Framework\App\Request\Http))
+#27 C:\xampp\htdocs\m246\vendor\magento\framework\App\FrontController.php(146): Magento\Framework\App\FrontController->processRequest(Object(Magento\Framework\App\Request\Http), Object(Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor))
+#28 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\Framework\App\FrontController->dispatch(Object(Magento\Framework\App\Request\Http))
+#29 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent('dispatch', Array)
+#30 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#31 C:\xampp\htdocs\m246\generated\code\Magento\Framework\App\FrontController\Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins('dispatch', Array, Array)
+#32 C:\xampp\htdocs\m246\vendor\magento\framework\App\Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))
+#33 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\Framework\App\Http->launch()
+#34 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Framework\App\Http\Interceptor->___callParent('launch', Array)
+#35 C:\xampp\htdocs\m246\vendor\magento\module-application-performance-monitor\Plugin\ApplicationPerformanceMonitor.php(38): Magento\Framework\App\Http\Interceptor->Magento\Framework\Interception\{closure}()
+#36 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(135): Magento\ApplicationPerformanceMonitor\Plugin\ApplicationPerformanceMonitor->aroundLaunch(Object(Magento\Framework\App\Http\Interceptor), Object(Closure))
+#37 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Framework\App\Http\Interceptor->Magento\Framework\Interception\{closure}()
+#38 C:\xampp\htdocs\m246\generated\code\Magento\Framework\App\Http\Interceptor.php(23): Magento\Framework\App\Http\Interceptor->___callPlugins('launch', Array, NULL)
+#39 C:\xampp\htdocs\m246\vendor\magento\framework\App\Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#40 C:\xampp\htdocs\m246\pub\index.php(30): Magento\Framework\App\Bootstrap->run(Object(Magento\Framework\App\Http\Interceptor))
+#41 {main} {"exception":"[object] (Laminas\\Mail\\Transport\\Exception\\RuntimeException(code: 0): Unable to send mail: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() at C:\\xampp\\htdocs\\m246\\vendor\\laminas\\laminas-mail\\src\\Transport\\Sendmail.php:313)"} []
+[2024-05-17T05:56:40.116607+00:00] main.CRITICAL: Laminas\Mail\Transport\Exception\RuntimeException: Unable to send mail: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\m246\vendor\laminas\laminas-mail\src\Transport\Sendmail.php:313
+Stack trace:
+#0 C:\xampp\htdocs\m246\vendor\laminas\laminas-mail\src\Transport\Sendmail.php(150): Laminas\Mail\Transport\Sendmail->mailHandler('admin@admin.com', '=?UTF-8?Q?2FA=2...', '<p>admin admin,...', 'Date: Fri, 17 M...', '')
+#1 C:\xampp\htdocs\m246\vendor\magento\module-email\Model\Transport.php(183): Laminas\Mail\Transport\Sendmail->send(Object(Laminas\Mail\Message))
+#2 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\Email\Model\Transport->sendMessage()
+#3 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Email\Model\Transport\Interceptor->___callParent('sendMessage', Array)
+#4 C:\xampp\htdocs\m246\vendor\magento\module-email\Model\Mail\TransportInterfacePlugin.php(48): Magento\Email\Model\Transport\Interceptor->Magento\Framework\Interception\{closure}()
+#5 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(135): Magento\Email\Model\Mail\TransportInterfacePlugin->aroundSendMessage(Object(Magento\Email\Model\Transport\Interceptor), Object(Closure))
+#6 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Email\Model\Transport\Interceptor->Magento\Framework\Interception\{closure}()
+#7 C:\xampp\htdocs\m246\generated\code\Magento\Email\Model\Transport\Interceptor.php(32): Magento\Email\Model\Transport\Interceptor->___callPlugins('sendMessage', Array, NULL)
+#8 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Model\EmailUserNotifier.php(106): Magento\Email\Model\Transport\Interceptor->sendMessage()
+#9 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Model\EmailUserNotifier.php(131): Magento\TwoFactorAuth\Model\EmailUserNotifier->sendConfigRequired(Object(Magento\AdminAdobeIms\Model\User\Interceptor), 'eyJ1c2VyX2lkIjo...', 'tfa_admin_app_c...', 'http://localhos...')
+#10 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Model\UserConfig\UserConfigRequestManager.php(82): Magento\TwoFactorAuth\Model\EmailUserNotifier->sendAppConfigRequestMessage(Object(Magento\AdminAdobeIms\Model\User\Interceptor), 'eyJ1c2VyX2lkIjo...')
+#11 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Controller\Adminhtml\Tfa\Requestconfig.php(95): Magento\TwoFactorAuth\Model\UserConfig\UserConfigRequestManager->sendConfigRequestTo(Object(Magento\AdminAdobeIms\Model\User\Interceptor))
+#12 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig->execute()
+#13 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callParent('execute', Array)
+#14 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->Magento\Framework\Interception\{closure}()
+#15 C:\xampp\htdocs\m246\generated\code\Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor.php(23): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callPlugins('execute', Array, Array)
+#16 C:\xampp\htdocs\m246\vendor\magento\framework\App\Action\Action.php(111): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->execute()
+#17 C:\xampp\htdocs\m246\vendor\magento\module-backend\App\AbstractAction.php(151): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#18 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Controller\Adminhtml\AbstractAction.php(30): Magento\Backend\App\AbstractAction->dispatch(Object(Magento\Framework\App\Request\Http))
+#19 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\TwoFactorAuth\Controller\Adminhtml\AbstractAction->dispatch(Object(Magento\Framework\App\Request\Http))
+#20 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callParent('dispatch', Array)
+#21 C:\xampp\htdocs\m246\vendor\magento\module-backend\App\Action\Plugin\Authentication.php(145): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#22 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(135): Magento\Backend\App\Action\Plugin\Authentication->aroundDispatch(Object(Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor), Object(Closure), Object(Magento\Framework\App\Request\Http))
+#23 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#24 C:\xampp\htdocs\m246\generated\code\Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor.php(32): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callPlugins('dispatch', Array, Array)
+#25 C:\xampp\htdocs\m246\vendor\magento\framework\App\FrontController.php(245): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))
+#26 C:\xampp\htdocs\m246\vendor\magento\framework\App\FrontController.php(212): Magento\Framework\App\FrontController->getActionResponse(Object(Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor), Object(Magento\Framework\App\Request\Http))
+#27 C:\xampp\htdocs\m246\vendor\magento\framework\App\FrontController.php(146): Magento\Framework\App\FrontController->processRequest(Object(Magento\Framework\App\Request\Http), Object(Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor))
+#28 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\Framework\App\FrontController->dispatch(Object(Magento\Framework\App\Request\Http))
+#29 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent('dispatch', Array)
+#30 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#31 C:\xampp\htdocs\m246\generated\code\Magento\Framework\App\FrontController\Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins('dispatch', Array, Array)
+#32 C:\xampp\htdocs\m246\vendor\magento\framework\App\Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))
+#33 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\Framework\App\Http->launch()
+#34 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Framework\App\Http\Interceptor->___callParent('launch', Array)
+#35 C:\xampp\htdocs\m246\vendor\magento\module-application-performance-monitor\Plugin\ApplicationPerformanceMonitor.php(38): Magento\Framework\App\Http\Interceptor->Magento\Framework\Interception\{closure}()
+#36 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(135): Magento\ApplicationPerformanceMonitor\Plugin\ApplicationPerformanceMonitor->aroundLaunch(Object(Magento\Framework\App\Http\Interceptor), Object(Closure))
+#37 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Framework\App\Http\Interceptor->Magento\Framework\Interception\{closure}()
+#38 C:\xampp\htdocs\m246\generated\code\Magento\Framework\App\Http\Interceptor.php(23): Magento\Framework\App\Http\Interceptor->___callPlugins('launch', Array, NULL)
+#39 C:\xampp\htdocs\m246\vendor\magento\framework\App\Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#40 C:\xampp\htdocs\m246\pub\index.php(30): Magento\Framework\App\Bootstrap->run(Object(Magento\Framework\App\Http\Interceptor))
+#41 {main}
+
+Next Magento\Framework\Exception\MailException: Unable to send mail. Please try again later. in C:\xampp\htdocs\m246\vendor\magento\module-email\Model\Transport.php:186
+Stack trace:
+#0 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\Email\Model\Transport->sendMessage()
+#1 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Email\Model\Transport\Interceptor->___callParent('sendMessage', Array)
+#2 C:\xampp\htdocs\m246\vendor\magento\module-email\Model\Mail\TransportInterfacePlugin.php(48): Magento\Email\Model\Transport\Interceptor->Magento\Framework\Interception\{closure}()
+#3 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(135): Magento\Email\Model\Mail\TransportInterfacePlugin->aroundSendMessage(Object(Magento\Email\Model\Transport\Interceptor), Object(Closure))
+#4 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Email\Model\Transport\Interceptor->Magento\Framework\Interception\{closure}()
+#5 C:\xampp\htdocs\m246\generated\code\Magento\Email\Model\Transport\Interceptor.php(32): Magento\Email\Model\Transport\Interceptor->___callPlugins('sendMessage', Array, NULL)
+#6 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Model\EmailUserNotifier.php(106): Magento\Email\Model\Transport\Interceptor->sendMessage()
+#7 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Model\EmailUserNotifier.php(131): Magento\TwoFactorAuth\Model\EmailUserNotifier->sendConfigRequired(Object(Magento\AdminAdobeIms\Model\User\Interceptor), 'eyJ1c2VyX2lkIjo...', 'tfa_admin_app_c...', 'http://localhos...')
+#8 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Model\UserConfig\UserConfigRequestManager.php(82): Magento\TwoFactorAuth\Model\EmailUserNotifier->sendAppConfigRequestMessage(Object(Magento\AdminAdobeIms\Model\User\Interceptor), 'eyJ1c2VyX2lkIjo...')
+#9 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Controller\Adminhtml\Tfa\Requestconfig.php(95): Magento\TwoFactorAuth\Model\UserConfig\UserConfigRequestManager->sendConfigRequestTo(Object(Magento\AdminAdobeIms\Model\User\Interceptor))
+#10 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig->execute()
+#11 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callParent('execute', Array)
+#12 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->Magento\Framework\Interception\{closure}()
+#13 C:\xampp\htdocs\m246\generated\code\Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor.php(23): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callPlugins('execute', Array, Array)
+#14 C:\xampp\htdocs\m246\vendor\magento\framework\App\Action\Action.php(111): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->execute()
+#15 C:\xampp\htdocs\m246\vendor\magento\module-backend\App\AbstractAction.php(151): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#16 C:\xampp\htdocs\m246\vendor\magento\module-two-factor-auth\Controller\Adminhtml\AbstractAction.php(30): Magento\Backend\App\AbstractAction->dispatch(Object(Magento\Framework\App\Request\Http))
+#17 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\TwoFactorAuth\Controller\Adminhtml\AbstractAction->dispatch(Object(Magento\Framework\App\Request\Http))
+#18 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callParent('dispatch', Array)
+#19 C:\xampp\htdocs\m246\vendor\magento\module-backend\App\Action\Plugin\Authentication.php(145): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#20 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(135): Magento\Backend\App\Action\Plugin\Authentication->aroundDispatch(Object(Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor), Object(Closure), Object(Magento\Framework\App\Request\Http))
+#21 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#22 C:\xampp\htdocs\m246\generated\code\Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor.php(32): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->___callPlugins('dispatch', Array, Array)
+#23 C:\xampp\htdocs\m246\vendor\magento\framework\App\FrontController.php(245): Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))
+#24 C:\xampp\htdocs\m246\vendor\magento\framework\App\FrontController.php(212): Magento\Framework\App\FrontController->getActionResponse(Object(Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor), Object(Magento\Framework\App\Request\Http))
+#25 C:\xampp\htdocs\m246\vendor\magento\framework\App\FrontController.php(146): Magento\Framework\App\FrontController->processRequest(Object(Magento\Framework\App\Request\Http), Object(Magento\TwoFactorAuth\Controller\Adminhtml\Tfa\Requestconfig\Interceptor))
+#26 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\Framework\App\FrontController->dispatch(Object(Magento\Framework\App\Request\Http))
+#27 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent('dispatch', Array)
+#28 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#29 C:\xampp\htdocs\m246\generated\code\Magento\Framework\App\FrontController\Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins('dispatch', Array, Array)
+#30 C:\xampp\htdocs\m246\vendor\magento\framework\App\Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))
+#31 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(58): Magento\Framework\App\Http->launch()
+#32 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Framework\App\Http\Interceptor->___callParent('launch', Array)
+#33 C:\xampp\htdocs\m246\vendor\magento\module-application-performance-monitor\Plugin\ApplicationPerformanceMonitor.php(38): Magento\Framework\App\Http\Interceptor->Magento\Framework\Interception\{closure}()
+#34 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(135): Magento\ApplicationPerformanceMonitor\Plugin\ApplicationPerformanceMonitor->aroundLaunch(Object(Magento\Framework\App\Http\Interceptor), Object(Closure))
+#35 C:\xampp\htdocs\m246\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Framework\App\Http\Interceptor->Magento\Framework\Interception\{closure}()
+#36 C:\xampp\htdocs\m246\generated\code\Magento\Framework\App\Http\Interceptor.php(23): Magento\Framework\App\Http\Interceptor->___callPlugins('launch', Array, NULL)
+#37 C:\xampp\htdocs\m246\vendor\magento\framework\App\Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#38 C:\xampp\htdocs\m246\pub\index.php(30): Magento\Framework\App\Bootstrap->run(Object(Magento\Framework\App\Http\Interceptor))
+#39 {main} {"exception":"[object] (Magento\\Framework\\Exception\\MailException(code: 0): Unable to send mail. Please try again later. at C:\\xampp\\htdocs\\m246\\vendor\\magento\\module-email\\Model\\Transport.php:186)
+[previous exception] [object] (Laminas\\Mail\\Transport\\Exception\\RuntimeException(code: 0): Unable to send mail: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() at C:\\xampp\\htdocs\\m246\\vendor\\laminas\\laminas-mail\\src\\Transport\\Sendmail.php:313)"} []
+[2024-05-17T05:56:40.134546+00:00] main.INFO: Broken reference: the 'tracking' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:56:40.135136+00:00] main.INFO: Broken reference: the 'notification_area' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-05-17T05:56:40.135375+00:00] main.INFO: Broken reference: the 'unread_system_messages' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-05-17T05:56:40.135583+00:00] main.INFO: Broken reference: the 'notification_window' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-05-17T05:56:40.135807+00:00] main.INFO: Broken reference: the 'notification.messages' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:56:40.136022+00:00] main.INFO: Broken reference: the 'global_notices' element cannot be added as child to 'global.notices', because the latter doesn't exist [] []
+[2024-05-17T05:56:40.136282+00:00] main.INFO: Broken reference: the 'logo' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:56:40.136484+00:00] main.INFO: Broken reference: the 'global.search' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:56:40.136679+00:00] main.INFO: Broken reference: the 'user' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:56:40.136898+00:00] main.INFO: Broken reference: the 'menu' element cannot be added as child to 'page.menu', because the latter doesn't exist [] []
+[2024-05-17T05:56:40.137115+00:00] main.INFO: Broken reference: the 'breadcrumbs' element cannot be added as child to 'page.breadcrumbs', because the latter doesn't exist [] []
+[2024-05-17T05:56:40.137307+00:00] main.INFO: Broken reference: the 'formkey' element cannot be added as child to 'page.formkey', because the latter doesn't exist [] []
+[2024-05-17T05:56:40.137510+00:00] main.INFO: Broken reference: the 'page.title' element cannot be added as child to 'main.top', because the latter doesn't exist [] []
+[2024-05-17T05:56:40.137685+00:00] main.INFO: Broken reference: the 'messages' element cannot be added as child to 'page.messages', because the latter doesn't exist [] []
+[2024-05-17T05:56:40.137861+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' element cannot be added as child to 'page.main.actions', because the latter doesn't exist [] []
+[2024-05-17T05:56:40.138037+00:00] main.INFO: Broken reference: the 'legal' element cannot be added as child to 'footer', because the latter doesn't exist [] []
+[2024-05-17T05:56:40.138303+00:00] main.INFO: Broken reference: the 'header.inner.left' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:56:40.138483+00:00] main.INFO: Broken reference: the 'header.inner.right' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T05:56:40.138702+00:00] main.INFO: Broken reference: the 'user' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:56:40.138878+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:56:40.139058+00:00] main.INFO: Broken reference: the 'logo' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:56:40.139302+00:00] main.INFO: Broken reference: the 'global.search' tries to reorder itself towards 'logo', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:56:40.139608+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' tries to reorder itself towards '', but their parents are different: 'page.main.actions' and '' respectively. [] []
+[2024-05-17T05:56:40.140018+00:00] main.INFO: Broken reference: the 'header.inner.left' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:56:40.140541+00:00] main.INFO: Broken reference: the 'header.inner.right' tries to reorder itself towards 'header.inner.left', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T05:56:40.140807+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and '' respectively. [] []
+[2024-05-17T06:16:42.973635+00:00] main.ERROR: Command "admin:user:update" is not defined.
+
+Did you mean one of these?
+    admin:user:create
+    admin:user:unlock
+    encryption:payment-data:update
+#0 C:\xampp\htdocs\m246\vendor\symfony\console\Application.php(266): Symfony\Component\Console\Application->find('admin:user:upda...')
+#1 C:\xampp\htdocs\m246\vendor\magento\framework\Console\Cli.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\xampp\htdocs\m246\vendor\symfony\console\Application.php(175): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\xampp\htdocs\m246\bin\magento(23): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2024-05-17T06:18:39.088623+00:00] main.ERROR: Command "admin:user:update" is not defined.
+
+Did you mean one of these?
+    admin:user:create
+    admin:user:unlock
+    encryption:payment-data:update
+#0 C:\xampp\htdocs\m246\vendor\symfony\console\Application.php(266): Symfony\Component\Console\Application->find('admin:user:upda...')
+#1 C:\xampp\htdocs\m246\vendor\magento\framework\Console\Cli.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\xampp\htdocs\m246\vendor\symfony\console\Application.php(175): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\xampp\htdocs\m246\bin\magento(23): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2024-05-17T06:27:02.726917+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":[],"mode":"all"}} []
+[2024-05-17T06:27:02.868402+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":[],"mode":"all"}} []
+[2024-05-17T06:27:38.820391+00:00] main.DEBUG: Source class "\Magento\ServiceProxy\Model" for "Magento\ServiceProxy\Model\Logger" generation does not exist. {"exception":"[object] (RuntimeException(code: 0): Source class \"\\Magento\\ServiceProxy\\Model\" for \"Magento\\ServiceProxy\\Model\\Logger\" generation does not exist. at C:\\xampp\\htdocs\\m246\\vendor\\magento\\framework\\Code\\Generator.php:223)"} []
+[2024-05-17T06:27:54.169534+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["FPC"],"mode":"matchingTag"}} []
+[2024-05-17T06:27:54.313782+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["CONFIG"],"mode":"matchingTag"}} []
+[2024-05-17T06:27:54.422718+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["LAYOUT_GENERAL_CACHE_TAG"],"mode":"matchingTag"}} []
+[2024-05-17T06:27:54.425283+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["BLOCK_HTML"],"mode":"matchingTag"}} []
+[2024-05-17T06:27:54.427579+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["COLLECTION_DATA"],"mode":"matchingTag"}} []
+[2024-05-17T06:27:54.429730+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["REFLECTION"],"mode":"matchingTag"}} []
+[2024-05-17T06:27:54.431803+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["DB_DDL"],"mode":"matchingTag"}} []
+[2024-05-17T06:27:54.433814+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["COMPILED_CONFIG"],"mode":"matchingTag"}} []
+[2024-05-17T06:27:54.435701+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["EAV"],"mode":"matchingTag"}} []
+[2024-05-17T06:27:54.437690+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["CUSTOMER_NOTIFICATION"],"mode":"matchingTag"}} []
+[2024-05-17T06:27:54.439870+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["INTEGRATION"],"mode":"matchingTag"}} []
+[2024-05-17T06:27:54.442086+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["INTEGRATION_API_CONFIG"],"mode":"matchingTag"}} []
+[2024-05-17T06:27:54.444164+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["GRAPHQL_QUERY_RESOLVER_RESULT"],"mode":"matchingTag"}} []
+[2024-05-17T06:27:54.446682+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["FPC"],"mode":"matchingTag"}} []
+[2024-05-17T06:27:54.448640+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["WEBSERVICE"],"mode":"matchingTag"}} []
+[2024-05-17T06:27:54.450448+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["TRANSLATE"],"mode":"matchingTag"}} []
+[2024-05-17T06:28:22.520155+00:00] main.DEBUG: Source class "\Magento\ServiceProxy\Model" for "Magento\ServiceProxy\Model\Logger" generation does not exist. {"exception":"[object] (RuntimeException(code: 0): Source class \"\\Magento\\ServiceProxy\\Model\" for \"Magento\\ServiceProxy\\Model\\Logger\" generation does not exist. at C:\\xampp\\htdocs\\m246\\vendor\\magento\\framework\\Code\\Generator.php:223)"} []
+[2024-05-17T06:28:31.603004+00:00] main.INFO: Broken reference: the 'tracking' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T06:28:31.603960+00:00] main.INFO: Broken reference: the 'notification_area' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-05-17T06:28:31.604207+00:00] main.INFO: Broken reference: the 'unread_system_messages' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-05-17T06:28:31.604393+00:00] main.INFO: Broken reference: the 'notification_window' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-05-17T06:28:31.604571+00:00] main.INFO: Broken reference: the 'notification.messages' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T06:28:31.604766+00:00] main.INFO: Broken reference: the 'global_notices' element cannot be added as child to 'global.notices', because the latter doesn't exist [] []
+[2024-05-17T06:28:31.604929+00:00] main.INFO: Broken reference: the 'logo' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T06:28:31.605101+00:00] main.INFO: Broken reference: the 'global.search' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T06:28:31.605277+00:00] main.INFO: Broken reference: the 'user' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T06:28:31.605447+00:00] main.INFO: Broken reference: the 'menu' element cannot be added as child to 'page.menu', because the latter doesn't exist [] []
+[2024-05-17T06:28:31.605658+00:00] main.INFO: Broken reference: the 'breadcrumbs' element cannot be added as child to 'page.breadcrumbs', because the latter doesn't exist [] []
+[2024-05-17T06:28:31.606058+00:00] main.INFO: Broken reference: the 'formkey' element cannot be added as child to 'page.formkey', because the latter doesn't exist [] []
+[2024-05-17T06:28:31.606416+00:00] main.INFO: Broken reference: the 'page.title' element cannot be added as child to 'main.top', because the latter doesn't exist [] []
+[2024-05-17T06:28:31.606702+00:00] main.INFO: Broken reference: the 'messages' element cannot be added as child to 'page.messages', because the latter doesn't exist [] []
+[2024-05-17T06:28:31.606949+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' element cannot be added as child to 'page.main.actions', because the latter doesn't exist [] []
+[2024-05-17T06:28:31.607239+00:00] main.INFO: Broken reference: the 'legal' element cannot be added as child to 'footer', because the latter doesn't exist [] []
+[2024-05-17T06:28:31.607648+00:00] main.INFO: Broken reference: the 'header.inner.left' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T06:28:31.607891+00:00] main.INFO: Broken reference: the 'header.inner.right' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-05-17T06:28:31.608482+00:00] main.INFO: Broken reference: the 'user' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T06:28:31.608710+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T06:28:31.608896+00:00] main.INFO: Broken reference: the 'logo' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T06:28:31.609095+00:00] main.INFO: Broken reference: the 'global.search' tries to reorder itself towards 'logo', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T06:28:31.609377+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' tries to reorder itself towards '', but their parents are different: 'page.main.actions' and '' respectively. [] []
+[2024-05-17T06:28:31.609630+00:00] main.INFO: Broken reference: the 'header.inner.left' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T06:28:31.609905+00:00] main.INFO: Broken reference: the 'header.inner.right' tries to reorder itself towards 'header.inner.left', but their parents are different: 'header' and '' respectively. [] []
+[2024-05-17T06:28:31.610127+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and '' respectively. [] []
+[2024-05-17T06:28:47.967872+00:00] main.DEBUG: cache_invalidate:  {"method":"POST","url":"http://localhost/m246/pub/admin/tfa/tfa/requestconfig/key/f550e79e9b3cd51a95d146e19780de3ca5784956f5fdfb498acfb8d08b072c8a/","invalidateInfo":{"tags":["BACKEND_MAINMENU"],"mode":"matchingAnyTag"}} []
+[2024-05-17T06:28:48.361498+00:00] main.DEBUG: cache_invalidate:  {"method":"POST","url":"http://localhost/m246/pub/admin/tfa/tfa/requestconfig/key/f550e79e9b3cd51a95d146e19780de3ca5784956f5fdfb498acfb8d08b072c8a/","invalidateInfo":{"tags":["PB_EDITOR_CONFIG","CONFIG"],"mode":"matchingTag"}} []
+[2024-05-17T06:28:48.413163+00:00] main.DEBUG: Item Magento_Backend::system_currency was removed [] []
+[2024-05-17T06:28:48.419606+00:00] main.DEBUG: Add of item with id Magento_Config::system_config was processed [] []
+[2024-05-17T06:28:48.419881+00:00] main.DEBUG: Add of item with id Magento_AdminNotification::system_adminnotification was processed [] []
+[2024-05-17T06:28:48.420039+00:00] main.DEBUG: Add of item with id Magento_Theme::design_config was processed [] []
+[2024-05-17T06:28:48.420169+00:00] main.DEBUG: Add of item with id Magento_Theme::system_design_theme was processed [] []
+[2024-05-17T06:28:48.420275+00:00] main.DEBUG: Add of item with id Magento_Backend::system_design_schedule was processed [] []
+[2024-05-17T06:28:48.420399+00:00] main.DEBUG: Add of item with id Magento_Backend::system_store was processed [] []
+[2024-05-17T06:28:48.420502+00:00] main.DEBUG: Add of item with id Magento_Backend::dashboard was processed [] []
+[2024-05-17T06:28:48.420618+00:00] main.DEBUG: Add of item with id Magento_Backend::system was processed [] []
+[2024-05-17T06:28:48.420745+00:00] main.DEBUG: Add of item with id Magento_Backend::system_tools was processed [] []
+[2024-05-17T06:28:48.420876+00:00] main.DEBUG: Add of item with id Magento_Backend::system_design was processed [] []
+[2024-05-17T06:28:48.420983+00:00] main.DEBUG: Add of item with id Magento_Backend::system_convert was processed [] []
+[2024-05-17T06:28:48.421096+00:00] main.DEBUG: Add of item with id Magento_Backend::system_cache was processed [] []
+[2024-05-17T06:28:48.421208+00:00] main.DEBUG: Add of item with id Magento_Backend::marketing was processed [] []
+[2024-05-17T06:28:48.421336+00:00] main.DEBUG: Add of item with id Magento_Backend::marketing_communications was processed [] []
+[2024-05-17T06:28:48.421445+00:00] main.DEBUG: Add of item with id Magento_Backend::marketing_seo was processed [] []
+[2024-05-17T06:28:48.421572+00:00] main.DEBUG: Add of item with id Magento_Backend::marketing_user_content was processed [] []
+[2024-05-17T06:28:48.421753+00:00] main.DEBUG: Add of item with id Magento_Backend::content was processed [] []
+[2024-05-17T06:28:48.421922+00:00] main.DEBUG: Add of item with id Magento_Backend::content_elements was processed [] []
+[2024-05-17T06:28:48.422095+00:00] main.DEBUG: Add of item with id Magento_Backend::stores was processed [] []
+[2024-05-17T06:28:48.422260+00:00] main.DEBUG: Add of item with id Magento_Backend::stores_settings was processed [] []
+[2024-05-17T06:28:48.422459+00:00] main.DEBUG: Add of item with id Magento_Backend::stores_attributes was processed [] []
+[2024-05-17T06:28:48.422629+00:00] main.DEBUG: Add of item with id Magento_Backend::other_settings was processed [] []
+[2024-05-17T06:28:48.422897+00:00] main.DEBUG: Add of item with id Magento_Backend::system_other_settings was processed [] []
+[2024-05-17T06:28:48.423082+00:00] main.DEBUG: Add of item with id Magento_User::system_acl was processed [] []
+[2024-05-17T06:28:48.423271+00:00] main.DEBUG: Add of item with id Magento_User::system_acl_users was processed [] []
+[2024-05-17T06:28:48.423460+00:00] main.DEBUG: Add of item with id Magento_User::system_acl_roles was processed [] []
+[2024-05-17T06:28:48.423591+00:00] main.DEBUG: Add of item with id Magento_User::system_acl_locks was processed [] []
+[2024-05-17T06:28:48.423763+00:00] main.DEBUG: Add of item with id Magento_Customer::customer was processed [] []
+[2024-05-17T06:28:48.423953+00:00] main.DEBUG: Add of item with id Magento_Customer::customer_manage was processed [] []
+[2024-05-17T06:28:48.424121+00:00] main.DEBUG: Add of item with id Magento_Customer::customer_online was processed [] []
+[2024-05-17T06:28:48.424276+00:00] main.DEBUG: Add of item with id Magento_Customer::customer_group was processed [] []
+[2024-05-17T06:28:48.424426+00:00] main.DEBUG: Add of item with id Magento_Backup::system_tools_backup was processed [] []
+[2024-05-17T06:28:48.424560+00:00] main.DEBUG: Add of item with id Magento_Indexer::system_index was processed [] []
+[2024-05-17T06:28:48.424696+00:00] main.DEBUG: Add of item with id Magento_Variable::system_variable was processed [] []
+[2024-05-17T06:28:48.424842+00:00] main.DEBUG: Add of item with id Magento_Cms::cms_page was processed [] []
+[2024-05-17T06:28:48.424975+00:00] main.DEBUG: Add of item with id Magento_Cms::cms_block was processed [] []
+[2024-05-17T06:28:48.425115+00:00] main.DEBUG: Add of item with id Magento_Integration::system_extensions was processed [] []
+[2024-05-17T06:28:48.425260+00:00] main.DEBUG: Add of item with id Magento_Integration::system_integrations was processed [] []
+[2024-05-17T06:28:48.425413+00:00] main.DEBUG: Add of item with id Magento_Search::search_terms was processed [] []
+[2024-05-17T06:28:48.425552+00:00] main.DEBUG: Add of item with id Magento_Search::search_synonyms was processed [] []
+[2024-05-17T06:28:48.425695+00:00] main.DEBUG: Add of item with id Magento_Catalog::catalog was processed [] []
+[2024-05-17T06:28:48.425851+00:00] main.DEBUG: Add of item with id Magento_Catalog::catalog_products was processed [] []
+[2024-05-17T06:28:48.426014+00:00] main.DEBUG: Add of item with id Magento_Catalog::catalog_categories was processed [] []
+[2024-05-17T06:28:48.426184+00:00] main.DEBUG: Add of item with id Magento_Catalog::catalog_attributes_attributes was processed [] []
+[2024-05-17T06:28:48.426443+00:00] main.DEBUG: Add of item with id Magento_Catalog::catalog_attributes_sets was processed [] []
+[2024-05-17T06:28:48.426751+00:00] main.DEBUG: Add of item with id Magento_Catalog::inventory was processed [] []
+[2024-05-17T06:28:48.426944+00:00] main.DEBUG: Add of item with id Magento_CatalogRule::promo was processed [] []
+[2024-05-17T06:28:48.427115+00:00] main.DEBUG: Add of item with id Magento_CatalogRule::promo_catalog was processed [] []
+[2024-05-17T06:28:48.427259+00:00] main.DEBUG: Add of item with id Magento_MediaGalleryUi::media was processed [] []
+[2024-05-17T06:28:48.427440+00:00] main.DEBUG: Add of item with id Magento_MediaGalleryUi::media_gallery was processed [] []
+[2024-05-17T06:28:48.427583+00:00] main.DEBUG: Add of item with id Magento_Sales::sales was processed [] []
+[2024-05-17T06:28:48.427734+00:00] main.DEBUG: Add of item with id Magento_Sales::sales_operation was processed [] []
+[2024-05-17T06:28:48.427874+00:00] main.DEBUG: Add of item with id Magento_Sales::sales_order was processed [] []
+[2024-05-17T06:28:48.428005+00:00] main.DEBUG: Add of item with id Magento_Sales::sales_invoice was processed [] []
+[2024-05-17T06:28:48.428139+00:00] main.DEBUG: Add of item with id Magento_Sales::sales_shipment was processed [] []
+[2024-05-17T06:28:48.428260+00:00] main.DEBUG: Add of item with id Magento_Sales::sales_creditmemo was processed [] []
+[2024-05-17T06:28:48.428386+00:00] main.DEBUG: Add of item with id Magento_Sales::sales_transactions was processed [] []
+[2024-05-17T06:28:48.428570+00:00] main.DEBUG: Add of item with id Magento_Sales::system_order_statuses was processed [] []
+[2024-05-17T06:28:48.428706+00:00] main.DEBUG: Add of item with id Magento_Widget::cms_widget_instance was processed [] []
+[2024-05-17T06:28:48.428849+00:00] main.DEBUG: Add of item with id Magento_Analytics::business_intelligence was processed [] []
+[2024-05-17T06:28:48.429006+00:00] main.DEBUG: Add of item with id Magento_Analytics::advanced_reporting was processed [] []
+[2024-05-17T06:28:48.429129+00:00] main.DEBUG: Add of item with id Magento_Analytics::bi_essentials was processed [] []
+[2024-05-17T06:28:48.429286+00:00] main.DEBUG: Add of item with id Magento_Downloadable::report_products_downloads was processed [] []
+[2024-05-17T06:28:48.429433+00:00] main.DEBUG: Add of item with id Magento_Newsletter::newsletter_template was processed [] []
+[2024-05-17T06:28:48.429559+00:00] main.DEBUG: Add of item with id Magento_Newsletter::newsletter_queue was processed [] []
+[2024-05-17T06:28:48.429683+00:00] main.DEBUG: Add of item with id Magento_Newsletter::newsletter_subscriber was processed [] []
+[2024-05-17T06:28:48.429815+00:00] main.DEBUG: Add of item with id Magento_Newsletter::newsletter_problem was processed [] []
+[2024-05-17T06:28:48.429958+00:00] main.DEBUG: Add of item with id Magento_ImportExport::system_convert_import was processed [] []
+[2024-05-17T06:28:48.430076+00:00] main.DEBUG: Add of item with id Magento_ImportExport::system_convert_export was processed [] []
+[2024-05-17T06:28:48.430257+00:00] main.DEBUG: Add of item with id Magento_ImportExport::system_convert_history was processed [] []
+[2024-05-17T06:28:48.430421+00:00] main.DEBUG: Add of item with id Magento_Email::template was processed [] []
+[2024-05-17T06:28:48.430580+00:00] main.DEBUG: Add of item with id Magento_EncryptionKey::system_crypt_key was processed [] []
+[2024-05-17T06:28:48.430752+00:00] main.DEBUG: Add of item with id Magento_InventoryAdminUi::inventory was processed [] []
+[2024-05-17T06:28:48.430924+00:00] main.DEBUG: Add of item with id Magento_InventoryAdminUi::source was processed [] []
+[2024-05-17T06:28:48.431111+00:00] main.DEBUG: Add of item with id Magento_InventoryAdminUi::stock was processed [] []
+[2024-05-17T06:28:48.431273+00:00] main.DEBUG: Add of item with id Magento_Reports::report was processed [] []
+[2024-05-17T06:28:48.431427+00:00] main.DEBUG: Add of item with id Magento_Reports::report_marketing was processed [] []
+[2024-05-17T06:28:48.431611+00:00] main.DEBUG: Add of item with id Magento_Reports::report_salesroot was processed [] []
+[2024-05-17T06:28:48.431784+00:00] main.DEBUG: Add of item with id Magento_Reports::report_salesroot_sales was processed [] []
+[2024-05-17T06:28:48.431914+00:00] main.DEBUG: Add of item with id Magento_Reports::report_salesroot_tax was processed [] []
+[2024-05-17T06:28:48.432031+00:00] main.DEBUG: Add of item with id Magento_Reports::report_salesroot_invoiced was processed [] []
+[2024-05-17T06:28:48.432134+00:00] main.DEBUG: Add of item with id Magento_Reports::report_salesroot_shipping was processed [] []
+[2024-05-17T06:28:48.432237+00:00] main.DEBUG: Add of item with id Magento_Reports::report_salesroot_refunded was processed [] []
+[2024-05-17T06:28:48.432337+00:00] main.DEBUG: Add of item with id Magento_Reports::report_salesroot_coupons was processed [] []
+[2024-05-17T06:28:48.432448+00:00] main.DEBUG: Add of item with id Magento_Reports::report_shopcart_product was processed [] []
+[2024-05-17T06:28:48.432559+00:00] main.DEBUG: Add of item with id Magento_Reports::report_shopcart_abandoned was processed [] []
+[2024-05-17T06:28:48.432689+00:00] main.DEBUG: Add of item with id Magento_Reports::report_products was processed [] []
+[2024-05-17T06:28:48.432790+00:00] main.DEBUG: Add of item with id Magento_Reports::report_products_bestsellers was processed [] []
+[2024-05-17T06:28:48.432896+00:00] main.DEBUG: Add of item with id Magento_Reports::report_products_sold was processed [] []
+[2024-05-17T06:28:48.433015+00:00] main.DEBUG: Add of item with id Magento_Reports::report_products_viewed was processed [] []
+[2024-05-17T06:28:48.433131+00:00] main.DEBUG: Add of item with id Magento_Reports::report_products_lowstock was processed [] []
+[2024-05-17T06:28:48.433233+00:00] main.DEBUG: Add of item with id Magento_Reports::report_customers was processed [] []
+[2024-05-17T06:28:48.433367+00:00] main.DEBUG: Add of item with id Magento_Reports::report_customers_accounts was processed [] []
+[2024-05-17T06:28:48.433504+00:00] main.DEBUG: Add of item with id Magento_Reports::report_customers_totals was processed [] []
+[2024-05-17T06:28:48.433630+00:00] main.DEBUG: Add of item with id Magento_Reports::report_customers_orders was processed [] []
+[2024-05-17T06:28:48.433740+00:00] main.DEBUG: Add of item with id Magento_Reports::report_statistics was processed [] []
+[2024-05-17T06:28:48.433879+00:00] main.DEBUG: Add of item with id Magento_Reports::report_statistics_refresh was processed [] []
+[2024-05-17T06:28:48.433988+00:00] main.DEBUG: Add of item with id Magento_Search::report_search_term was processed [] []
+[2024-05-17T06:28:48.434104+00:00] main.DEBUG: Add of item with id Magento_LoginAsCustomerLog::login_log was processed [] []
+[2024-05-17T06:28:48.434213+00:00] main.DEBUG: Add of item with id Magento_Marketplace::partners was processed [] []
+[2024-05-17T06:28:48.434345+00:00] main.DEBUG: Add of item with id Magento_SalesRule::promo_quote was processed [] []
+[2024-05-17T06:28:48.434459+00:00] main.DEBUG: Add of item with id Magento_Sitemap::catalog_sitemap was processed [] []
+[2024-05-17T06:28:48.434564+00:00] main.DEBUG: Add of item with id Magento_PageBuilder::templates was processed [] []
+[2024-05-17T06:28:48.434672+00:00] main.DEBUG: Add of item with id Magento_Paypal::report_salesroot_paypal_settlement_reports was processed [] []
+[2024-05-17T06:28:48.434785+00:00] main.DEBUG: Add of item with id Magento_Paypal::paypal_billing_agreement was processed [] []
+[2024-05-17T06:28:48.434902+00:00] main.DEBUG: Add of item with id Magento_CheckoutAgreements::sales_checkoutagreement was processed [] []
+[2024-05-17T06:28:48.435017+00:00] main.DEBUG: Add of item with id Magento_Review::catalog_reviews_ratings_ratings was processed [] []
+[2024-05-17T06:28:48.435149+00:00] main.DEBUG: Add of item with id Magento_Review::catalog_reviews_ratings_pending was processed [] []
+[2024-05-17T06:28:48.435279+00:00] main.DEBUG: Add of item with id Magento_Review::catalog_reviews_ratings_reviews_all was processed [] []
+[2024-05-17T06:28:48.435409+00:00] main.DEBUG: Add of item with id Magento_Review::report_review was processed [] []
+[2024-05-17T06:28:48.435544+00:00] main.DEBUG: Add of item with id Magento_Review::report_review_customer was processed [] []
+[2024-05-17T06:28:48.435652+00:00] main.DEBUG: Add of item with id Magento_Review::report_review_product was processed [] []
+[2024-05-17T06:28:48.435777+00:00] main.DEBUG: Add of item with id Magento_UrlRewrite::urlrewrite was processed [] []
+[2024-05-17T06:28:48.435900+00:00] main.DEBUG: Add of item with id Magento_PaymentServicesDashboard::paymentservicesdashboard was processed [] []
+[2024-05-17T06:28:48.436031+00:00] main.DEBUG: Add of item with id Magento_ServicesId::configuration was processed [] []
+[2024-05-17T06:28:48.436158+00:00] main.DEBUG: Add of item with id Magento_ServicesId::services_id was processed [] []
+[2024-05-17T06:28:48.436282+00:00] main.DEBUG: Add of item with id Magento_Tax::sales_tax was processed [] []
+[2024-05-17T06:28:48.436418+00:00] main.DEBUG: Add of item with id Magento_Tax::sales_tax_rules was processed [] []
+[2024-05-17T06:28:48.436536+00:00] main.DEBUG: Add of item with id Magento_Tax::sales_tax_rates was processed [] []
+[2024-05-17T06:28:48.436652+00:00] main.DEBUG: Add of item with id Magento_TaxImportExport::system_convert_tax was processed [] []
+[2024-05-17T06:28:48.436773+00:00] main.DEBUG: Add of item with id Magento_AsynchronousOperations::system_magento_logging was processed [] []
+[2024-05-17T06:28:48.436901+00:00] main.DEBUG: Add of item with id Magento_AsynchronousOperations::system_magento_logging_bulk_operations was processed [] []
+[2024-05-17T06:28:48.437062+00:00] main.DEBUG: Add of item with id Magento_CurrencySymbol::system_currency was processed [] []
+[2024-05-17T06:28:48.437206+00:00] main.DEBUG: Add of item with id Magento_CurrencySymbol::system_currency_rates was processed [] []
+[2024-05-17T06:28:48.437317+00:00] main.DEBUG: Add of item with id Magento_CurrencySymbol::system_currency_symbols was processed [] []
+[2024-05-17T06:28:48.437424+00:00] main.DEBUG: Add of item with id PayPal_Braintree::settlement_report was processed [] []
+[2024-05-17T06:28:48.437528+00:00] main.DEBUG: Add of item with id PayPal_Braintree::virtual_terminal was processed [] []
+[2024-05-17T06:28:51.446958+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and 'header' respectively. [] []
+[2024-05-17T06:35:16.243684+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and 'header' respectively. [] []
+[2024-05-17T06:35:54.257330+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and 'header' respectively. [] []
+[2024-05-17T06:38:48.410622+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and 'header' respectively. [] []
