@@ -132,10 +132,12 @@ class Validator
      */
     protected function isPathInDirectories($path, $directories)
     {
+        $realPath = str_replace('\\','/',$this->fileDriver->getRealPath($path));
+
         if (!is_array($directories)) {
             $directories = (array)$directories;
         }
-        $realPath = $this->fileDriver->getRealPath($path);
+        
         foreach ($directories as $directory) {
             if ($directory !== null && 0 === strpos($realPath, $directory)) {
                 return true;
