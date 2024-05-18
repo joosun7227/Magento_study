@@ -4218,6 +4218,13 @@ body._has-modal-custom .modal-custom-overlay {
   z-index: 899;
 }
 /**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+.product-info-stock-sku .configurable-variation-qty {
+  display: none;
+}
+/**
      * @codingStandardsIgnoreStart
      */
 #store-pickup.selected-shipping ~ #store-selector {
@@ -5655,13 +5662,6 @@ div[data-content-type='video'] video {
 }
 .cart-summary .google-pay {
   margin-bottom: 14px;
-}
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
-.product-info-stock-sku .configurable-variation-qty {
-  display: none;
 }
 .column .block-addbysku .fieldset {
   margin: 0;

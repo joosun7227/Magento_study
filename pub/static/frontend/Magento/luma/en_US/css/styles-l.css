@@ -6,6 +6,13 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
+.product-info-stock-sku .configurable-variation-qty {
+  display: none;
+}
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
 /**
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
@@ -83,13 +90,6 @@
 }
 .cart-summary .google-pay {
   margin-bottom: 14px;
-}
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
-.product-info-stock-sku .configurable-variation-qty {
-  display: none;
 }
 /**
  * Copyright © Magento, Inc. All rights reserved.
