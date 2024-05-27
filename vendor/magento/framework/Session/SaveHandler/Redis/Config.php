@@ -131,6 +131,11 @@ class Config implements \Cm\RedisSession\Handler\ConfigInterface
     const XML_PATH_ADMIN_SESSION_LIFETIME = 'admin/security/session_lifetime';
 
     /**
+     * Configuration path for retries
+     */
+    const PARAM_RETRIES = 'session/redis/retries';
+
+    /**
      * Session max lifetime
      */
     const SESSION_MAX_LIFETIME = 31536000;
@@ -275,7 +280,7 @@ class Config implements \Cm\RedisSession\Handler\ConfigInterface
     {
         return $this->deploymentConfig->get(self::PARAM_DISABLE_LOCKING);
     }
-
+    
     /**
      * @inheritdoc
      */
@@ -358,4 +363,14 @@ class Config implements \Cm\RedisSession\Handler\ConfigInterface
     {
         return self::DEFAULT_FAIL_AFTER;
     }
+
+    /**
+     * @inheritdoc
+     */
+    public function getRetries()
+    {
+        return $this->deploymentConfig->get(self::PARAM_RETRIES) ?: 3;
+    }
+
+
 }
