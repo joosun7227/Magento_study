@@ -1,0 +1,15 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1716788607;s:6:"expire";i:1716875007;s:4:"tags";s:96:"20d_BLOCK_HTML,20d_CAT_P_2047,20d_CAT_P,20d_CAT_P_1,20d_CAT_P_2,20d_CAT_P_3,20d_CAT_P_4,20d_MAGE";}
+<div class="price-box price-configured_price" data-role="priceBox" data-product-id="2047" data-price-box="product-id-2047">        <p class="price-as-configured">
+        
+
+<span class="price-container price-configured_price&#x20;tax&#x20;weee"
+         itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+        <span  id="product-price-2047"                data-price-amount="70"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">$70.00</span></span>
+                <meta itemprop="price" content="70" />
+        <meta itemprop="priceCurrency" content="USD" />
+    </span>
+    </p>
+</div>
